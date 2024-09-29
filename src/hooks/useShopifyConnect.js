@@ -16,6 +16,7 @@ const useShopifyConnect = () => {
       });
 
       document.shopifyConnect.onDiscColorsChanged(({ colors }) => {
+        console.log("onDiscColorsChanged in React:", colors);
         setSelectedDiscColors(colors);
       });
     }
