@@ -7,10 +7,10 @@ import useShopifyConnect from './hooks/useShopifyConnect'
 import ModelLoader from './components/ModelLoader'
 
 function App() {
-  const { param, bladeColor, selectedDiscColors } = useShopifyConnect()
+  const { param, selectedDiscColors } = useShopifyConnect()
 
   useEffect(() => {
-    console.log('Reactv3', selectedDiscColors)
+    console.log('Reactv4', selectedDiscColors)
   }, [selectedDiscColors])
 
   return (
