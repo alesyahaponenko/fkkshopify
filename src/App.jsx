@@ -6,10 +6,12 @@ import * as THREE from 'three'
 import useShopifyConnect from './hooks/useShopifyConnect'
 import ModelLoader from './components/ModelLoader'
 
-
-
 function App() {
-  const { param, bladeColor } = useShopifyConnect()
+  const { param, bladeColor, selectedDiscColors } = useShopifyConnect()
+
+  useEffect(() => {
+    console.log('selectedDiscColors from react', selectedDiscColors)
+  }, [])
 
   return (
     <div className='absolute w-full h-full left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>

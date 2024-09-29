@@ -3,15 +3,25 @@ import { useEffect, useState } from "react";
 const useShopifyConnect = () => {
   const [param, setParam] = useState(null);
   const [bladeColor, setBladeColor] = useState('orange');
+  const [selectedDiscColors, setSelectedDiscColors] = useState([]);
+
   useEffect(() => {
-    document.shopifyConnect?.onParamChanged((newParam) => {
-      setParam(newParam);
-    });
-    document.shopifyConnect?.onBladeColorChanged(({ color }) => {
-      setBladeColor(color);
-    })
+    if (document.shopifyConnect) {
+      document.shopifyConnect.onParamChanged((newParam) => {
+        setParam(newParam);
+      });
+
+      document.shopifyConnect.onBladeColorChanged(({ color }) => {
+        setBladeColor(color);
+      });
+
+      document.shopifyConnect.onDiscColorsChanged(({ colors }) => {
+        setSelectedDiscColors(colors);
+      });
+    }
   }, []);
-  return { param, bladeColor };
+
+  return { param, bladeColor, selectedDiscColors };
 };
 
 export default useShopifyConnect;
