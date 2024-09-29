@@ -10,7 +10,7 @@ function App() {
   const { param, bladeColor, selectedDiscColors } = useShopifyConnect()
 
   useEffect(() => {
-    console.log('selectedDiscColors from react', selectedDiscColors)
+    console.log('React', selectedDiscColors)
   }, [selectedDiscColors])
 
   return (
