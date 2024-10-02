@@ -1,10 +1,19 @@
 import React, { useRef, useEffect } from 'react'
 import { useLoader, useFrame } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader'
 import * as THREE from 'three'
 
 function Model({ path }) {
-  const gltf = useLoader(GLTFLoader, path)
+  const gltf = useLoader(
+    GLTFLoader,
+    path,
+    (loader) => {
+      const dracoLoader = new DRACOLoader()
+      dracoLoader.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5.6/')
+      loader.setDRACOLoader(dracoLoader)
+    }
+  )
   const modelRef = useRef()
 
   useEffect(() => {
@@ -29,7 +38,7 @@ function Model({ path }) {
       // Log all node names
       console.log('All node names:', getAllNodeNames(gltf.scene))
     }
-  }, [gltf, materialNodes])
+  }, [gltf])
 
   const getAllNodeNames = (object) => {
     let names = []
