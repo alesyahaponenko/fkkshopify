@@ -29,7 +29,7 @@ function App() {
       >
         <Environment files='https://cdn.shopify.com/s/files/1/0739/0206/3938/files/forest_slope_1k.hdr' />
         <Suspense fallback={null}>
-          <ModelLoader modelPath='https://cdn.shopify.com/s/files/1/0739/0206/3938/files/model1.glb?v=1703582209' />
+          <ModelLoader modelPath='https://cdn.shopify.com/3d/models/abe604fce1138c22/default_handle.glb' />
         </Suspense>
         <ContactShadows position={[0, -0.8, 0]} color='#ffffff' />
         <OrbitControls />
