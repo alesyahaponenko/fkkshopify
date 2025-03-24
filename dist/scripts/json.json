@@ -1,0 +1,1648 @@
+{
+    "globalOptions": {
+        "isEnv": false,
+        "camera": {
+            "isSetup": true,
+            "savedPositions": [
+                {
+                    "target": {
+                        "x": -88.66397812854714,
+                        "y": 5.924126803973436,
+                        "z": 5.656249839320803
+                    },
+                    "position": {
+                        "x": 16.04868528530285,
+                        "y": -0.524474311254103,
+                        "z": 343.3439845233092
+                    }
+                },
+                {
+                    "target": {
+                        "x": -88.66397812854714,
+                        "y": 5.924126803973436,
+                        "z": 5.656249839320803
+                    },
+                    "position": {
+                        "x": 175.3923865739846,
+                        "y": -24.59092565936644,
+                        "z": 238.8565935886653
+                    }
+                },
+                {
+                    "target": {
+                        "x": -88.66397812854714,
+                        "y": 5.924126803973436,
+                        "z": 5.656249839320803
+                    },
+                    "position": {
+                        "x": -137.2223892733317,
+                        "y": -65.00365402934364,
+                        "z": 272.8963967265774
+                    }
+                },
+                {
+                    "target": {
+                        "x": 100.4149344140901,
+                        "y": -1.394397204683598,
+                        "z": -14.22087512615898
+                    },
+                    "position": {
+                        "x": 84.61960315695667,
+                        "y": 15.55884850190271,
+                        "z": 266.9937492675124
+                    }
+                },
+                {
+                    "target": {
+                        "x": -116.6915490967454,
+                        "y": 3.835091748632861,
+                        "z": 21.24007181625663
+                    },
+                    "position": {
+                        "x": -55.23087205800573,
+                        "y": 4.6501061459667,
+                        "z": -338.2032043831205
+                    }
+                }
+            ],
+            "currentPosition": {
+                "target": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "position": {
+                    "x": 42.05059492612796,
+                    "y": 13.0558061420286,
+                    "z": 494.4896742124312
+                }
+            }
+        },
+        "lights": {
+            "ambient": 5,
+            "exposurelvl": 1.4,
+            "directionalLight1": 1.1,
+            "directionalLight2": 0.9,
+            "directionalLight3": 0.9
+        },
+        "envPreset": "lobby"
+    },
+    "collections": [
+        {
+            "id": "cm3n7xcpo0000ljvbff65bjuu",
+            "name": "Chef",
+            "items": [
+                {
+                    "fileName": "AC_cm3n7xcpo0000ljvbff65bjuu_handles_handle_random.glb",
+                    "textFileName": "Random",
+                    "fileUrl": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/AC_cm3n7xcpo0000ljvbff65bjuu_handles_handle_random.glb?v=1731946579",
+                    "modelType": "handles",
+                    "nodes": [
+                        "Handl_BIG_Random_1",
+                        "Handl_BIG_Random_2",
+                        "Handl_BIG_Random_3",
+                        "Handl_BIG_Random_4",
+                        "Handl_BIG_Random_5",
+                        "Handl_BIG_Random_6",
+                        "Handl_BIG_Random_7",
+                        "Handl_BIG_Random_8",
+                        "Handl_BIG_Random_9",
+                        "Handl_BIG_Random_10",
+                        "Handl_BIG_Random_11",
+                        "Handl_BIG_Random_12",
+                        "Handl_BIG_Random_13",
+                        "Handl_BIG_Random_14",
+                        "Handl_BIG_Random_15",
+                        "Handl_BIG_Random_16",
+                        "Handl_BIG_Random_17",
+                        "Handl_BIG_Random_18",
+                        "Handl_BIG_Random_19",
+                        "Handl_BIG_Random_20",
+                        "Handl_BIG_Random_21",
+                        "Handl_BIG_Random_22",
+                        "Handl_BIG_Random_23",
+                        "Handl_BIG_Random_24",
+                        "Handl_BIG_Random_25",
+                        "Handl_BIG_Random_26",
+                        "Handl_BIG_Random_27",
+                        "Handl_BIG_Random_28",
+                        "Handl_BIG_Random_29",
+                        "Handl_BIG_Random_30",
+                        "Handl_BIG_Random_31",
+                        "Handl_BIG_Random_32",
+                        "Handl_BIG_Random_33",
+                        "Handl_BIG_Random_34",
+                        "Handl_BIG_Random_35",
+                        "Handl_BIG_Random_36",
+                        "Handl_BIG_Random_37",
+                        "Handl_BIG_Random_38",
+                        "Handl_BIG_Random_39",
+                        "Handl_BIG_Random_40",
+                        "Handl_BIG_Random_41",
+                        "Handl_BIG_Random_42",
+                        "Handl_BIG_Random_43",
+                        "Handl_BIG_Random_44",
+                        "Handl_BIG_Random_45",
+                        "Handl_BIG_Random_46",
+                        "Handl_BIG_Random_47",
+                        "Handl_BIG_Random_48",
+                        "Handl_BIG_Random_49",
+                        "Handl_BIG_Random_50",
+                        "Handl_BIG_Random_51",
+                        "Handl_BIG_Random_52",
+                        "Handl_BIG_Random_53",
+                        "Handl_BIG_Random_54"
+                    ],
+                    "refGroups": [
+                        {
+                            "id": "group_1732611223051",
+                            "name": "Bolster",
+                            "nodes": [
+                                "Handl_BIG_Random_1"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3sucw4v0002yidwtqbsarol",
+                                    "name": "Bolster",
+                                    "modelType": "handles",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732544883399",
+                                                "name": "Brass",
+                                                "metalness": 0.64,
+                                                "roughness": 0.4,
+                                                "colors": [
+                                                    "#a4871e"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_flat-matte-brushed-brass-texture-photo.jpg?v=1732545110"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-28T10:27:23.451Z"
+                                            },
+                                            {
+                                                "id": "1732713426228",
+                                                "name": "Metal",
+                                                "metalness": 0.24,
+                                                "roughness": 0.14,
+                                                "colors": [
+                                                    "#9e691f",
+                                                    "#7c9e1f",
+                                                    "#1f9e45",
+                                                    "#1f9b9e",
+                                                    "#3b1f9e",
+                                                    "#9e1f32",
+                                                    "#2e2e2e"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Carbon-hand%20Sanded.jpg?v=1732696930"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-28T10:13:30.212Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "group_1732611237260",
+                            "name": "Rivet",
+                            "nodes": [
+                                "Handl_BIG_Random_2"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3sucops0001yidwk2tp2ath",
+                                    "name": "Rivet",
+                                    "modelType": "handles",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732544719264",
+                                                "name": "Brass",
+                                                "metalness": 0.9,
+                                                "roughness": 0.04,
+                                                "colors": [
+                                                    "#ffffff"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_flat-matte-brushed-brass-texture-photo.jpg?v=1732545110"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T03:18:40.379Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "group_1732611297494",
+                            "name": "Leather Spacers",
+                            "nodes": [
+                                "Handl_BIG_Random_3",
+                                "Handl_BIG_Random_4",
+                                "Handl_BIG_Random_5",
+                                "Handl_BIG_Random_6",
+                                "Handl_BIG_Random_7",
+                                "Handl_BIG_Random_8",
+                                "Handl_BIG_Random_9",
+                                "Handl_BIG_Random_10",
+                                "Handl_BIG_Random_11",
+                                "Handl_BIG_Random_12",
+                                "Handl_BIG_Random_13",
+                                "Handl_BIG_Random_14",
+                                "Handl_BIG_Random_15",
+                                "Handl_BIG_Random_16",
+                                "Handl_BIG_Random_17",
+                                "Handl_BIG_Random_18",
+                                "Handl_BIG_Random_19",
+                                "Handl_BIG_Random_20",
+                                "Handl_BIG_Random_21",
+                                "Handl_BIG_Random_22",
+                                "Handl_BIG_Random_23",
+                                "Handl_BIG_Random_24",
+                                "Handl_BIG_Random_25",
+                                "Handl_BIG_Random_26",
+                                "Handl_BIG_Random_27",
+                                "Handl_BIG_Random_28"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3suhxc10004yidwqmxh28wa",
+                                    "name": "Leather Spacers",
+                                    "modelType": "handles",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732611394127",
+                                                "name": "Leather Spacers",
+                                                "metalness": 0.3,
+                                                "roughness": 0.84,
+                                                "colors": [
+                                                    "#614724",
+                                                    "#262621"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_1000_F_310041287_m8zKlDomHUTWA5wkAnKb9vprh8Pvmj7P.jpg?v=1732730674"
+                                                    },
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_leather-texture-black-1024x595.jpg?v=1732611424"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T18:09:35.393Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "group_1732611333052",
+                            "name": "Discs",
+                            "nodes": [
+                                "Handl_BIG_Random_29",
+                                "Handl_BIG_Random_30",
+                                "Handl_BIG_Random_31",
+                                "Handl_BIG_Random_32",
+                                "Handl_BIG_Random_33",
+                                "Handl_BIG_Random_34",
+                                "Handl_BIG_Random_35",
+                                "Handl_BIG_Random_36",
+                                "Handl_BIG_Random_37",
+                                "Handl_BIG_Random_38",
+                                "Handl_BIG_Random_39",
+                                "Handl_BIG_Random_40",
+                                "Handl_BIG_Random_41",
+                                "Handl_BIG_Random_42",
+                                "Handl_BIG_Random_43",
+                                "Handl_BIG_Random_44",
+                                "Handl_BIG_Random_45",
+                                "Handl_BIG_Random_46",
+                                "Handl_BIG_Random_47",
+                                "Handl_BIG_Random_48",
+                                "Handl_BIG_Random_49",
+                                "Handl_BIG_Random_50",
+                                "Handl_BIG_Random_51",
+                                "Handl_BIG_Random_52",
+                                "Handl_BIG_Random_53"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3roo9qx0000l6o1dzv6h155",
+                                    "name": "Discs",
+                                    "modelType": "handles",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732216005170",
+                                                "name": "Micarta",
+                                                "metalness": 0.08,
+                                                "roughness": 0.42,
+                                                "colors": [
+                                                    "#ad8800",
+                                                    "#163e0f",
+                                                    "#edeed3",
+                                                    "#a1268b",
+                                                    "#b84000",
+                                                    "#473024",
+                                                    "#452a5a",
+                                                    "#0d0d0c",
+                                                    "#230881",
+                                                    "#82190d"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Blue.jpg?v=1732216408"
+                                                    },
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Green%202.jpg?v=1732731379"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-12-07T10:28:31.072Z"
+                                            },
+                                            {
+                                                "id": "1732218131104",
+                                                "name": "Wood",
+                                                "metalness": 0,
+                                                "roughness": 0.74,
+                                                "colors": [
+                                                    "#4b4126"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_oak2.jpg?v=1732216122"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-28T10:04:25.649Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "group_1732611351907",
+                            "name": "Pommel",
+                            "nodes": [
+                                "Handl_BIG_Random_54"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3sud6my0003yidw6mea1xwo",
+                                    "name": "Pommel",
+                                    "modelType": "handles",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732713305926",
+                                                "name": "Metal",
+                                                "metalness": 0.26,
+                                                "roughness": 0.86,
+                                                "colors": [
+                                                    "#a9652d",
+                                                    "#7ea92d",
+                                                    "#2da969",
+                                                    "#2d9ba9",
+                                                    "#2d63a9",
+                                                    "#7e2da9",
+                                                    "#a92d6f",
+                                                    "#474747"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Hand%20Sanded.jpg?v=1732217950"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-28T10:33:54.012Z"
+                                            },
+                                            {
+                                                "id": "1732611544529",
+                                                "name": "Brass",
+                                                "metalness": 0.6,
+                                                "roughness": 0.62,
+                                                "colors": [
+                                                    "#e5d41f"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Brass1.jpg?v=1732611574"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T14:38:52.392Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fileName": "AC_cm3n7xcpo0000ljvbff65bjuu_handles_Handle_pattern_big_3mm.glb",
+                    "textFileName": "Pattern",
+                    "fileUrl": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/AC_cm3n7xcpo0000ljvbff65bjuu_handles_Handle_pattern_big_3mm.glb?v=1733410279",
+                    "modelType": "handles",
+                    "nodes": [
+                        "Handl_BIG_pattern_Disc_3mm002",
+                        "Handl_BIG_pattern_Disc_3mm002_1",
+                        "Handl_BIG_pattern_Disc_3mm002_2",
+                        "Handl_BIG_pattern_Disc_3mm002_3",
+                        "Handl_BIG_pattern_Disc_3mm002_4",
+                        "Handl_BIG_pattern_Disc_3mm002_5",
+                        "Handl_BIG_pattern_Disc_3mm002_6",
+                        "Handl_BIG_pattern_Disc_3mm002_7",
+                        "Handl_BIG_pattern_Disc_3mm002_8",
+                        "Handl_BIG_pattern_Disc_3mm002_9",
+                        "Handl_BIG_pattern_Disc_3mm002_10",
+                        "Handl_BIG_pattern_Disc_3mm002_11",
+                        "Handl_BIG_pattern_Disc_3mm002_12",
+                        "Handl_BIG_pattern_Disc_3mm002_13",
+                        "Handl_BIG_pattern_Disc_3mm002_14",
+                        "Handl_BIG_pattern_Disc_3mm002_15",
+                        "Handl_BIG_pattern_Disc_3mm002_16",
+                        "Handl_BIG_pattern_Disc_3mm002_17",
+                        "Handl_BIG_pattern_Disc_3mm002_18",
+                        "Handl_BIG_pattern_Disc_3mm002_19",
+                        "Handl_BIG_pattern_Disc_3mm002_20",
+                        "Handl_BIG_pattern_Disc_3mm002_21",
+                        "Handl_BIG_pattern_Disc_3mm002_22",
+                        "Handl_BIG_pattern_Disc_3mm002_23",
+                        "Handl_BIG_pattern_Disc_3mm002_24",
+                        "Handl_BIG_pattern_Disc_3mm002_25",
+                        "Handl_BIG_pattern_Disc_3mm002_26",
+                        "Handl_BIG_pattern_Disc_3mm002_27",
+                        "Handl_BIG_pattern_Disc_3mm002_28",
+                        "Handl_BIG_pattern_Disc_3mm002_29",
+                        "Handl_BIG_pattern_Disc_3mm002_30",
+                        "Handl_BIG_pattern_Disc_3mm002_31",
+                        "Handl_BIG_pattern_Disc_3mm002_32",
+                        "Handl_BIG_pattern_Disc_3mm002_33",
+                        "Handl_BIG_pattern_Disc_3mm002_34",
+                        "Handl_BIG_pattern_Disc_3mm002_35",
+                        "Handl_BIG_pattern_Disc_3mm002_36",
+                        "Handl_BIG_pattern_Disc_3mm002_37",
+                        "Handl_BIG_pattern_Disc_3mm002_38",
+                        "Handl_BIG_pattern_Disc_3mm002_39",
+                        "Handl_BIG_pattern_Disc_3mm002_40",
+                        "Handl_BIG_pattern_Disc_3mm002_41",
+                        "Handl_BIG_pattern_Disc_3mm002_42",
+                        "Handl_BIG_pattern_Disc_3mm002_43",
+                        "Handl_BIG_pattern_Disc_3mm002_44",
+                        "Handl_BIG_pattern_Disc_3mm002_45"
+                    ],
+                    "refGroups": [
+                        {
+                            "id": "group_1733410322653",
+                            "name": "Pommel",
+                            "nodes": [
+                                "Handl_BIG_pattern_Disc_3mm002"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3sud6my0003yidw6mea1xwo",
+                                    "name": "Pommel",
+                                    "modelType": "handles",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732713305926",
+                                                "name": "Metal",
+                                                "metalness": 0.26,
+                                                "roughness": 0.86,
+                                                "colors": [
+                                                    "#a9652d",
+                                                    "#7ea92d",
+                                                    "#2da969",
+                                                    "#2d9ba9",
+                                                    "#2d63a9",
+                                                    "#7e2da9",
+                                                    "#a92d6f",
+                                                    "#474747"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Hand%20Sanded.jpg?v=1732217950"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-28T10:33:54.012Z"
+                                            },
+                                            {
+                                                "id": "1732611544529",
+                                                "name": "Brass",
+                                                "metalness": 0.6,
+                                                "roughness": 0.62,
+                                                "colors": [
+                                                    "#e5d41f"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Brass1.jpg?v=1732611574"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T14:38:52.392Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "group_1733410363094",
+                            "name": "Leather Spacers",
+                            "nodes": [
+                                "Handl_BIG_pattern_Disc_3mm002_1",
+                                "Handl_BIG_pattern_Disc_3mm002_3",
+                                "Handl_BIG_pattern_Disc_3mm002_5",
+                                "Handl_BIG_pattern_Disc_3mm002_7",
+                                "Handl_BIG_pattern_Disc_3mm002_9",
+                                "Handl_BIG_pattern_Disc_3mm002_11",
+                                "Handl_BIG_pattern_Disc_3mm002_13",
+                                "Handl_BIG_pattern_Disc_3mm002_15",
+                                "Handl_BIG_pattern_Disc_3mm002_17",
+                                "Handl_BIG_pattern_Disc_3mm002_19",
+                                "Handl_BIG_pattern_Disc_3mm002_21",
+                                "Handl_BIG_pattern_Disc_3mm002_23",
+                                "Handl_BIG_pattern_Disc_3mm002_25",
+                                "Handl_BIG_pattern_Disc_3mm002_27",
+                                "Handl_BIG_pattern_Disc_3mm002_29",
+                                "Handl_BIG_pattern_Disc_3mm002_31",
+                                "Handl_BIG_pattern_Disc_3mm002_33",
+                                "Handl_BIG_pattern_Disc_3mm002_35",
+                                "Handl_BIG_pattern_Disc_3mm002_37",
+                                "Handl_BIG_pattern_Disc_3mm002_39",
+                                "Handl_BIG_pattern_Disc_3mm002_41",
+                                "Handl_BIG_pattern_Disc_3mm002_43"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3suhxc10004yidwqmxh28wa",
+                                    "name": "Leather Spacers",
+                                    "modelType": "handles",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732611394127",
+                                                "name": "Leather Spacers",
+                                                "metalness": 0.3,
+                                                "roughness": 0.84,
+                                                "colors": [
+                                                    "#614724",
+                                                    "#262621"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_1000_F_310041287_m8zKlDomHUTWA5wkAnKb9vprh8Pvmj7P.jpg?v=1732730674"
+                                                    },
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_leather-texture-black-1024x595.jpg?v=1732611424"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T18:09:35.393Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "group_1733410396289",
+                            "name": "Discs",
+                            "nodes": [
+                                "Handl_BIG_pattern_Disc_3mm002_2",
+                                "Handl_BIG_pattern_Disc_3mm002_4",
+                                "Handl_BIG_pattern_Disc_3mm002_6",
+                                "Handl_BIG_pattern_Disc_3mm002_8",
+                                "Handl_BIG_pattern_Disc_3mm002_10",
+                                "Handl_BIG_pattern_Disc_3mm002_12",
+                                "Handl_BIG_pattern_Disc_3mm002_14",
+                                "Handl_BIG_pattern_Disc_3mm002_16",
+                                "Handl_BIG_pattern_Disc_3mm002_18",
+                                "Handl_BIG_pattern_Disc_3mm002_20",
+                                "Handl_BIG_pattern_Disc_3mm002_22",
+                                "Handl_BIG_pattern_Disc_3mm002_24",
+                                "Handl_BIG_pattern_Disc_3mm002_26",
+                                "Handl_BIG_pattern_Disc_3mm002_28",
+                                "Handl_BIG_pattern_Disc_3mm002_30",
+                                "Handl_BIG_pattern_Disc_3mm002_32",
+                                "Handl_BIG_pattern_Disc_3mm002_34",
+                                "Handl_BIG_pattern_Disc_3mm002_36",
+                                "Handl_BIG_pattern_Disc_3mm002_38",
+                                "Handl_BIG_pattern_Disc_3mm002_40",
+                                "Handl_BIG_pattern_Disc_3mm002_42"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3roo9qx0000l6o1dzv6h155",
+                                    "name": "Discs",
+                                    "modelType": "handles",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732216005170",
+                                                "name": "Micarta",
+                                                "metalness": 0.08,
+                                                "roughness": 0.42,
+                                                "colors": [
+                                                    "#ad8800",
+                                                    "#163e0f",
+                                                    "#edeed3",
+                                                    "#a1268b",
+                                                    "#b84000",
+                                                    "#473024",
+                                                    "#452a5a",
+                                                    "#0d0d0c",
+                                                    "#230881",
+                                                    "#82190d"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Blue.jpg?v=1732216408"
+                                                    },
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Green%202.jpg?v=1732731379"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-12-07T10:28:31.072Z"
+                                            },
+                                            {
+                                                "id": "1732218131104",
+                                                "name": "Wood",
+                                                "metalness": 0,
+                                                "roughness": 0.74,
+                                                "colors": [
+                                                    "#4b4126"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_oak2.jpg?v=1732216122"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-28T10:04:25.649Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "group_1733410414693",
+                            "name": "Bolster",
+                            "nodes": [
+                                "Handl_BIG_pattern_Disc_3mm002_44"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3sucw4v0002yidwtqbsarol",
+                                    "name": "Bolster",
+                                    "modelType": "handles",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732544883399",
+                                                "name": "Brass",
+                                                "metalness": 0.64,
+                                                "roughness": 0.4,
+                                                "colors": [
+                                                    "#a4871e"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_flat-matte-brushed-brass-texture-photo.jpg?v=1732545110"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-28T10:27:23.451Z"
+                                            },
+                                            {
+                                                "id": "1732713426228",
+                                                "name": "Metal",
+                                                "metalness": 0.24,
+                                                "roughness": 0.14,
+                                                "colors": [
+                                                    "#9e691f",
+                                                    "#7c9e1f",
+                                                    "#1f9e45",
+                                                    "#1f9b9e",
+                                                    "#3b1f9e",
+                                                    "#9e1f32",
+                                                    "#2e2e2e"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Carbon-hand%20Sanded.jpg?v=1732696930"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-28T10:13:30.212Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "group_1733410422839",
+                            "name": "Rivet",
+                            "nodes": [
+                                "Handl_BIG_pattern_Disc_3mm002_45"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3sucops0001yidwk2tp2ath",
+                                    "name": "Rivet",
+                                    "modelType": "handles",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732544719264",
+                                                "name": "Brass",
+                                                "metalness": 0.9,
+                                                "roughness": 0.04,
+                                                "colors": [
+                                                    "#ffffff"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_flat-matte-brushed-brass-texture-photo.jpg?v=1732545110"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T03:18:40.379Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fileName": "AC_cm3n7xcpo0000ljvbff65bjuu_blades_CHEF convex.glb",
+                    "textFileName": "Convex",
+                    "fileUrl": "https://cdn.shopify.com/s/files/1/0708/2462/4376/t/1/assets/AC_cm3n7xcpo0000ljvbff65bjuu_blades_CHEF%20convex.glb?v=1733739961",
+                    "modelType": "blades",
+                    "nodes": [],
+                    "refGroups": [
+                        {
+                            "id": "group_1733746139915",
+                            "name": "Blade",
+                            "nodes": [
+                                "CHEF_convex_2"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3shriuu0002127w7svxz9ut",
+                                    "name": "Stainless Steel",
+                                    "modelType": "blades",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732264884239",
+                                                "name": "Hand Sanded",
+                                                "metalness": 0.64,
+                                                "roughness": 0.1,
+                                                "colors": [
+                                                    "#c2c2c2"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Hand%20Sanded.jpg?v=1732217950"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-12-04T14:15:50.194Z"
+                                            },
+                                            {
+                                                "id": "1732264878873",
+                                                "name": "Satin",
+                                                "metalness": 0.8,
+                                                "roughness": 0.18,
+                                                "colors": [
+                                                    "#ededed"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_SS.jpg?v=1732162619"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T11:30:59.113Z"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "id": "cm3si1jtd0004127wsiwdmue1",
+                                    "name": "Carbon",
+                                    "modelType": "blades",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732265353430",
+                                                "name": "Forced Patina",
+                                                "metalness": 0.2,
+                                                "roughness": 0.4,
+                                                "colors": [
+                                                    "#9c9c9c"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Carbon_satin_forced.jpg?v=1732265363"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T14:45:38.669Z"
+                                            },
+                                            {
+                                                "id": "1732265447746",
+                                                "name": "Leopard Patina",
+                                                "metalness": 0.2,
+                                                "roughness": 0.4,
+                                                "colors": [
+                                                    "#b3b3b3"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_leopard_patina.jpg?v=1732265494"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T14:45:22.486Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "group_1733746155184",
+                            "name": "Logo",
+                            "nodes": [
+                                "CHEF_convex_1"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3shrvwu0003127w8cmb5lhk",
+                                    "name": "Logo Stainless Steel",
+                                    "modelType": "blades",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732694155990",
+                                                "name": "Stainless Steel",
+                                                "metalness": 0.1,
+                                                "roughness": 0.04,
+                                                "colors": [
+                                                    "#878787"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Carbon-hand%20Sanded.jpg?v=1732696930"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T08:42:11.237Z"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "id": "cm3si1wmg0005127w1imtel7u",
+                                    "name": "Logo Carbon",
+                                    "modelType": "blades",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732694636142",
+                                                "name": "Logo Carbon",
+                                                "metalness": 0,
+                                                "roughness": 0,
+                                                "colors": [
+                                                    "#999999"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Carbon_satin_forced.jpg?v=1732265363"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T08:43:01.005Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fileName": "AC_cm3n7xcpo0000ljvbff65bjuu_blades_CHEF Single BEVEL Right.glb",
+                    "textFileName": "Right Bevel",
+                    "fileUrl": "https://cdn.shopify.com/s/files/1/0708/2462/4376/t/1/assets/AC_cm3n7xcpo0000ljvbff65bjuu_blades_CHEF%20Single%20BEVEL%20Right.glb?v=1733739807",
+                    "modelType": "blades",
+                    "nodes": [
+                        "CHEF_Single_BEVEL_Right_2"
+                    ],
+                    "refGroups": [
+                        {
+                            "id": "group_1733739875260",
+                            "name": "Blade",
+                            "nodes": [
+                                "CHEF_Single_BEVEL_Right_2"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3shriuu0002127w7svxz9ut",
+                                    "name": "Stainless Steel",
+                                    "modelType": "blades",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732264884239",
+                                                "name": "Hand Sanded",
+                                                "metalness": 0.64,
+                                                "roughness": 0.1,
+                                                "colors": [
+                                                    "#c2c2c2"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Hand%20Sanded.jpg?v=1732217950"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-12-04T14:15:50.194Z"
+                                            },
+                                            {
+                                                "id": "1732264878873",
+                                                "name": "Satin",
+                                                "metalness": 0.8,
+                                                "roughness": 0.18,
+                                                "colors": [
+                                                    "#ededed"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_SS.jpg?v=1732162619"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T11:30:59.113Z"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "id": "cm3si1jtd0004127wsiwdmue1",
+                                    "name": "Carbon",
+                                    "modelType": "blades",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732265353430",
+                                                "name": "Forced Patina",
+                                                "metalness": 0.2,
+                                                "roughness": 0.4,
+                                                "colors": [
+                                                    "#9c9c9c"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Carbon_satin_forced.jpg?v=1732265363"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T14:45:38.669Z"
+                                            },
+                                            {
+                                                "id": "1732265447746",
+                                                "name": "Leopard Patina",
+                                                "metalness": 0.2,
+                                                "roughness": 0.4,
+                                                "colors": [
+                                                    "#b3b3b3"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_leopard_patina.jpg?v=1732265494"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T14:45:22.486Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "group_1733746240269",
+                            "name": "Logo",
+                            "nodes": [
+                                "CHEF_Single_BEVEL_Right_1"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3shrvwu0003127w8cmb5lhk",
+                                    "name": "Logo Stainless Steel",
+                                    "modelType": "blades",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732694155990",
+                                                "name": "Stainless Steel",
+                                                "metalness": 0.1,
+                                                "roughness": 0.04,
+                                                "colors": [
+                                                    "#878787"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Carbon-hand%20Sanded.jpg?v=1732696930"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T08:42:11.237Z"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "id": "cm3si1wmg0005127w1imtel7u",
+                                    "name": "Logo Carbon",
+                                    "modelType": "blades",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732694636142",
+                                                "name": "Logo Carbon",
+                                                "metalness": 0,
+                                                "roughness": 0,
+                                                "colors": [
+                                                    "#999999"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Carbon_satin_forced.jpg?v=1732265363"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T08:43:01.005Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fileName": "AC_cm3n7xcpo0000ljvbff65bjuu_blades_CHEF Single BEVEL Left.glb",
+                    "textFileName": "Left Bevel",
+                    "fileUrl": "https://cdn.shopify.com/s/files/1/0708/2462/4376/t/1/assets/AC_cm3n7xcpo0000ljvbff65bjuu_blades_CHEF%20Single%20BEVEL%20Left.glb?v=1733739892",
+                    "modelType": "blades",
+                    "nodes": [],
+                    "refGroups": [
+                        {
+                            "id": "group_1733746205517",
+                            "name": "Blade",
+                            "nodes": [
+                                "CHEF_Single_BEVEL_Left_2"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3shriuu0002127w7svxz9ut",
+                                    "name": "Stainless Steel",
+                                    "modelType": "blades",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732264884239",
+                                                "name": "Hand Sanded",
+                                                "metalness": 0.64,
+                                                "roughness": 0.1,
+                                                "colors": [
+                                                    "#c2c2c2"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Hand%20Sanded.jpg?v=1732217950"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-12-04T14:15:50.194Z"
+                                            },
+                                            {
+                                                "id": "1732264878873",
+                                                "name": "Satin",
+                                                "metalness": 0.8,
+                                                "roughness": 0.18,
+                                                "colors": [
+                                                    "#ededed"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_SS.jpg?v=1732162619"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T11:30:59.113Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "group_1733746214739",
+                            "name": "Logo",
+                            "nodes": [
+                                "CHEF_Single_BEVEL_Left_1"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3shrvwu0003127w8cmb5lhk",
+                                    "name": "Logo Stainless Steel",
+                                    "modelType": "blades",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732694155990",
+                                                "name": "Stainless Steel",
+                                                "metalness": 0.1,
+                                                "roughness": 0.04,
+                                                "colors": [
+                                                    "#878787"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Carbon-hand%20Sanded.jpg?v=1732696930"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T08:42:11.237Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cm4gwdnzs0000116b8qi4pp2c",
+            "name": "Eastern",
+            "items": [
+                {
+                    "fileName": "AC_cm4gwdnzs0000116b8qi4pp2c_handles_Handle_Small_Pattern.glb",
+                    "textFileName": "Pattern",
+                    "fileUrl": "https://cdn.shopify.com/s/files/1/0708/2462/4376/t/1/assets/AC_cm4gwdnzs0000116b8qi4pp2c_handles_Handle_Small_Pattern.glb?v=1733740613",
+                    "modelType": "handles",
+                    "nodes": [],
+                    "refGroups": [
+                        {
+                            "id": "group_1733740682041",
+                            "name": "Bolster",
+                            "nodes": [
+                                "Handle_SMALL_Pattern_15mm_1"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3sucw4v0002yidwtqbsarol",
+                                    "name": "Bolster",
+                                    "modelType": "handles",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732544883399",
+                                                "name": "Brass",
+                                                "metalness": 0.64,
+                                                "roughness": 0.4,
+                                                "colors": [
+                                                    "#a4871e"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_flat-matte-brushed-brass-texture-photo.jpg?v=1732545110"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-28T10:27:23.451Z"
+                                            },
+                                            {
+                                                "id": "1732713426228",
+                                                "name": "Metal",
+                                                "metalness": 0.24,
+                                                "roughness": 0.14,
+                                                "colors": [
+                                                    "#9e691f",
+                                                    "#7c9e1f",
+                                                    "#1f9e45",
+                                                    "#1f9b9e",
+                                                    "#3b1f9e",
+                                                    "#9e1f32",
+                                                    "#2e2e2e"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Carbon-hand%20Sanded.jpg?v=1732696930"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-28T10:13:30.212Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "group_1733740714253",
+                            "name": "Pommel",
+                            "nodes": [
+                                "Handle_SMALL_Pattern_15mm_60"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3sud6my0003yidw6mea1xwo",
+                                    "name": "Pommel",
+                                    "modelType": "handles",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732713305926",
+                                                "name": "Metal",
+                                                "metalness": 0.26,
+                                                "roughness": 0.86,
+                                                "colors": [
+                                                    "#a9652d",
+                                                    "#7ea92d",
+                                                    "#2da969",
+                                                    "#2d9ba9",
+                                                    "#2d63a9",
+                                                    "#7e2da9",
+                                                    "#a92d6f",
+                                                    "#474747"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Hand%20Sanded.jpg?v=1732217950"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-28T10:33:54.012Z"
+                                            },
+                                            {
+                                                "id": "1732611544529",
+                                                "name": "Brass",
+                                                "metalness": 0.6,
+                                                "roughness": 0.62,
+                                                "colors": [
+                                                    "#e5d41f"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Brass1.jpg?v=1732611574"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T14:38:52.392Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "group_1733740739283",
+                            "name": "Rivet",
+                            "nodes": [
+                                "Handle_SMALL_Pattern_15mm_3"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3sucops0001yidwk2tp2ath",
+                                    "name": "Rivet",
+                                    "modelType": "handles",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732544719264",
+                                                "name": "Brass",
+                                                "metalness": 0.9,
+                                                "roughness": 0.04,
+                                                "colors": [
+                                                    "#ffffff"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_flat-matte-brushed-brass-texture-photo.jpg?v=1732545110"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T03:18:40.379Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "group_1733741039019",
+                            "name": "Discs",
+                            "nodes": [
+                                "Handle_SMALL_Pattern_15mm_53",
+                                "Handle_SMALL_Pattern_15mm_52",
+                                "Handle_SMALL_Pattern_15mm_51",
+                                "Handle_SMALL_Pattern_15mm_50",
+                                "Handle_SMALL_Pattern_15mm_49",
+                                "Handle_SMALL_Pattern_15mm_48",
+                                "Handle_SMALL_Pattern_15mm_54",
+                                "Handle_SMALL_Pattern_15mm_55",
+                                "Handle_SMALL_Pattern_15mm_56",
+                                "Handle_SMALL_Pattern_15mm_57",
+                                "Handle_SMALL_Pattern_15mm_58",
+                                "Handle_SMALL_Pattern_15mm_59",
+                                "Handle_SMALL_Pattern_15mm_47",
+                                "Handle_SMALL_Pattern_15mm_46",
+                                "Handle_SMALL_Pattern_15mm_45",
+                                "Handle_SMALL_Pattern_15mm_44",
+                                "Handle_SMALL_Pattern_15mm_43",
+                                "Handle_SMALL_Pattern_15mm_42",
+                                "Handle_SMALL_Pattern_15mm_41",
+                                "Handle_SMALL_Pattern_15mm_40",
+                                "Handle_SMALL_Pattern_15mm_39",
+                                "Handle_SMALL_Pattern_15mm_38",
+                                "Handle_SMALL_Pattern_15mm_37",
+                                "Handle_SMALL_Pattern_15mm_36",
+                                "Handle_SMALL_Pattern_15mm_35",
+                                "Handle_SMALL_Pattern_15mm_34",
+                                "Handle_SMALL_Pattern_15mm_33",
+                                "Handle_SMALL_Pattern_15mm_32"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3roo9qx0000l6o1dzv6h155",
+                                    "name": "Discs",
+                                    "modelType": "handles",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732216005170",
+                                                "name": "Micarta",
+                                                "metalness": 0.08,
+                                                "roughness": 0.42,
+                                                "colors": [
+                                                    "#ad8800",
+                                                    "#163e0f",
+                                                    "#edeed3",
+                                                    "#a1268b",
+                                                    "#b84000",
+                                                    "#473024",
+                                                    "#452a5a",
+                                                    "#0d0d0c",
+                                                    "#230881",
+                                                    "#82190d"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Blue.jpg?v=1732216408"
+                                                    },
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Green%202.jpg?v=1732731379"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-12-07T10:28:31.072Z"
+                                            },
+                                            {
+                                                "id": "1732218131104",
+                                                "name": "Wood",
+                                                "metalness": 0,
+                                                "roughness": 0.74,
+                                                "colors": [
+                                                    "#4b4126"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_oak2.jpg?v=1732216122"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-28T10:04:25.649Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "group_1733741088077",
+                            "name": "Leather Spacers",
+                            "nodes": [
+                                "Handle_SMALL_Pattern_15mm_2",
+                                "Handle_SMALL_Pattern_15mm_4",
+                                "Handle_SMALL_Pattern_15mm_5",
+                                "Handle_SMALL_Pattern_15mm_6",
+                                "Handle_SMALL_Pattern_15mm_7",
+                                "Handle_SMALL_Pattern_15mm_8",
+                                "Handle_SMALL_Pattern_15mm_9",
+                                "Handle_SMALL_Pattern_15mm_10",
+                                "Handle_SMALL_Pattern_15mm_11",
+                                "Handle_SMALL_Pattern_15mm_12",
+                                "Handle_SMALL_Pattern_15mm_13",
+                                "Handle_SMALL_Pattern_15mm_14",
+                                "Handle_SMALL_Pattern_15mm_15",
+                                "Handle_SMALL_Pattern_15mm_16",
+                                "Handle_SMALL_Pattern_15mm_17",
+                                "Handle_SMALL_Pattern_15mm_18",
+                                "Handle_SMALL_Pattern_15mm_19",
+                                "Handle_SMALL_Pattern_15mm_20",
+                                "Handle_SMALL_Pattern_15mm_21",
+                                "Handle_SMALL_Pattern_15mm_22",
+                                "Handle_SMALL_Pattern_15mm_23",
+                                "Handle_SMALL_Pattern_15mm_24",
+                                "Handle_SMALL_Pattern_15mm_25",
+                                "Handle_SMALL_Pattern_15mm_26",
+                                "Handle_SMALL_Pattern_15mm_27",
+                                "Handle_SMALL_Pattern_15mm_28",
+                                "Handle_SMALL_Pattern_15mm_29",
+                                "Handle_SMALL_Pattern_15mm_30",
+                                "Handle_SMALL_Pattern_15mm_31"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3suhxc10004yidwqmxh28wa",
+                                    "name": "Leather Spacers",
+                                    "modelType": "handles",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732611394127",
+                                                "name": "Leather Spacers",
+                                                "metalness": 0.3,
+                                                "roughness": 0.84,
+                                                "colors": [
+                                                    "#614724",
+                                                    "#262621"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_1000_F_310041287_m8zKlDomHUTWA5wkAnKb9vprh8Pvmj7P.jpg?v=1732730674"
+                                                    },
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_leather-texture-black-1024x595.jpg?v=1732611424"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T18:09:35.393Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fileName": "AC_cm4gwdnzs0000116b8qi4pp2c_blades_Blade Eastern.glb",
+                    "textFileName": "Left Bevel",
+                    "fileUrl": "https://cdn.shopify.com/s/files/1/0708/2462/4376/t/1/assets/AC_cm4gwdnzs0000116b8qi4pp2c_blades_Blade%20Eastern.glb?v=1733741111",
+                    "modelType": "blades",
+                    "nodes": [
+                        "Table_EASTERN_Flat_2"
+                    ],
+                    "refGroups": [
+                        {
+                            "id": "group_1733741191647",
+                            "name": "Blade",
+                            "nodes": [
+                                "Table_EASTERN_Flat_2"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3shriuu0002127w7svxz9ut",
+                                    "name": "Stainless Steel",
+                                    "modelType": "blades",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732264884239",
+                                                "name": "Hand Sanded",
+                                                "metalness": 0.64,
+                                                "roughness": 0.1,
+                                                "colors": [
+                                                    "#c2c2c2"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Hand%20Sanded.jpg?v=1732217950"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-12-04T14:15:50.194Z"
+                                            },
+                                            {
+                                                "id": "1732264878873",
+                                                "name": "Satin",
+                                                "metalness": 0.8,
+                                                "roughness": 0.18,
+                                                "colors": [
+                                                    "#ededed"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_SS.jpg?v=1732162619"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T11:30:59.113Z"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "id": "cm3si1jtd0004127wsiwdmue1",
+                                    "name": "Carbon",
+                                    "modelType": "blades",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732265353430",
+                                                "name": "Forced Patina",
+                                                "metalness": 0.2,
+                                                "roughness": 0.4,
+                                                "colors": [
+                                                    "#9c9c9c"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Carbon_satin_forced.jpg?v=1732265363"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T14:45:38.669Z"
+                                            },
+                                            {
+                                                "id": "1732265447746",
+                                                "name": "Leopard Patina",
+                                                "metalness": 0.2,
+                                                "roughness": 0.4,
+                                                "colors": [
+                                                    "#b3b3b3"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_leopard_patina.jpg?v=1732265494"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T14:45:22.486Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "group_1733746277568",
+                            "name": "Logo",
+                            "nodes": [
+                                "Table_EASTERN_Flat_1"
+                            ],
+                            "groupedNodes": [
+                                {
+                                    "id": "cm3shrvwu0003127w8cmb5lhk",
+                                    "name": "Logo Stainless Steel",
+                                    "modelType": "blades",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732694155990",
+                                                "name": "Stainless Steel",
+                                                "metalness": 0.1,
+                                                "roughness": 0.04,
+                                                "colors": [
+                                                    "#878787"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Carbon-hand%20Sanded.jpg?v=1732696930"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T08:42:11.237Z"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "id": "cm3si1wmg0005127w1imtel7u",
+                                    "name": "Logo Carbon",
+                                    "modelType": "blades",
+                                    "settingsData": {
+                                        "difmaps": [
+                                            {
+                                                "id": "1732694636142",
+                                                "name": "Logo Carbon",
+                                                "metalness": 0,
+                                                "roughness": 0,
+                                                "colors": [
+                                                    "#999999"
+                                                ],
+                                                "textures": [
+                                                    {
+                                                        "url": "https://cdn.shopify.com/s/files/1/0739/0206/3938/t/4/assets/A_textures_null_Carbon_satin_forced.jpg?v=1732265363"
+                                                    }
+                                                ],
+                                                "textureUpdated": "2024-11-27T08:43:01.005Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

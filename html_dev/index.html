@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Product Customizer - Shopify</title>
+    <script type="module" crossorigin src="../dist/assets/index.js"></script>
+    <link rel="stylesheet" crossorigin href="../dist/assets/index.css">
+    <style>
+        .wrap {
+            display: flex;
+        }
+        #canvas {
+            width: 80%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 80vw;
+            height: 100vh;
+        }
+        #models-display {
+            position: absolute;
+            right: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div id="canvas"></div>
+      <div id="models-display">
+      </div>
+    </div>
+
+    <script src="../dist/scripts/shopifyConnect.js" type="module"></script>
+    <script src="../dist/scripts/ui.js" type="module"></script>
+  </body>
+</html>
