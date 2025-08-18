@@ -302,13 +302,14 @@
     }
 
     .customizer-header, .customizer-header-mobile {
+      margin-top: 1px;
       margin-right: 1.04vw;
 
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
 
-      padding: .83vw 0 .52vw;
+      padding: 15px 0 11px;
       border-top: 1px solid #381409;
       border-bottom: 1px solid #381409;
       color: #381409;
@@ -325,18 +326,25 @@
     }
     .customizer-header .ch-back,
     .customizer-header-mobile .ch-back {
-      column-gap: 14px;
+      column-gap: 10px;
       cursor: pointer;
 
       font-family: "sutro", serif;
       font-size: .94vw;
       line-height: 1.04vw;
+
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
     }
     .customizer-header .ch-back svg,
     .customizer-header-mobile .ch-back svg {
       display: block;
       width: .26vw;
       height: .47vw;
+    }
+    .customizer-header .ch-step {
+      margin-left: 4px;
     }
     .customizer-header .ch-right,
     .customizer-header-mobile .ch-right {
@@ -529,9 +537,14 @@
     }
     .bespoke-step .steel-item[data-comingsoon="true"],
     .bespoke-step .step-item[data-comingsoon="true"],
-    .bespoke-step .finish-item[data-comingsoon="true"]{
+    .bespoke-step .finish-item[data-comingsoon="true"] {
       pointer-events: none;
       opacity: .5;
+    }
+    .bespoke-step .steel-item[data-disabled="true"],
+    .bespoke-step .step-item[data-disabled="true"],
+    .bespoke-step .finish-item[data-disabled="true"] {
+      display: none;
     }
     .bespoke-step .steel-item label,
     .bespoke-step .step-item label,
@@ -580,6 +593,11 @@
     .bespoke-step .step-item[data-comingsoon="true"] span:after,
     .bespoke-step .finish-item[data-comingsoon="true"] p:after {
       content: ' — Coming soon';
+    }
+    [lang="es"] .bespoke-step .steel-item[data-comingsoon="true"] label p:after,
+    [lang="es"] .bespoke-step .step-item[data-comingsoon="true"] span:after,
+    [lang="es"] .bespoke-step .finish-item[data-comingsoon="true"] p:after {
+      content: ' — Pronto';
     }
     .bespoke-step .steel-item label .el-description,
     .bespoke-step .step-item label .el-description,
@@ -800,18 +818,6 @@
       border-top: 1px solid #eee;
     }
 
-    .settings-section:nth-child(1) h4 {
-      content: "Logic";
-    }
-
-    .settings-section:nth-child(2) h4 {
-      content: "Leather Spacers";
-    }
-
-    .settings-section:nth-child(3) h4 {
-      content: "Discs";
-    }
-
     .color-button:hover {
       opacity: 0.9;
     }
@@ -904,7 +910,7 @@
     #optionalAddons .section-content .addons-list {
       display: flex;
       flex-direction: column;
-      row-gap: .42vw;
+      row-gap: 0;
 
       width: 100%;
     }
@@ -919,6 +925,8 @@
       display: block;
       position: relative;
       padding-left: .94vw;
+      padding-top: 10px;
+      padding-bottom: 10px;
       margin-bottom: 0 !important;
 
       font-size: .89vw;
@@ -927,6 +935,12 @@
 
       cursor: pointer;
     }
+    #optionalAddons .section-content .addons-list .addon:first-child label {
+      padding-top: 0;
+    }
+    #optionalAddons .section-content .addons-list .addon:last-child label {
+      padding-bottom: 0;
+    }
     #optionalAddons .section-content .addons-list .addon label span {
       pointer-events: none;
     }
@@ -934,7 +948,7 @@
       content: '';
 
       position: absolute;
-      top: .23vw;
+      top: calc(10px + .23vw);
       left: 0;
 
       display: block;
@@ -942,6 +956,9 @@
       height: .57vw;
       border-radius: 50%;
       border: 1px solid #381409;
+    }
+    #optionalAddons .section-content .addons-list .addon:first-child label:before {
+      top: .23vw;
     }
     #optionalAddons .section-content .addons-list .addon label:hover:before,
     #optionalAddons .section-content .addons-list .addon input:checked + label:before {
@@ -979,7 +996,7 @@
       pointer-events: none;
     }
     #optionalAddons .section-content .addons-list .addon input[data-inventory="0"] + label .out-of-stock {
-      display: block !important;
+      display: none !important;
 
       margin-top: 4px;
       padding-left: .94vw;
@@ -1080,13 +1097,16 @@
     #handleDesign .group-info[data-type="Bolster"] {
       order: 3;
     }
+    #handleDesign.no-wood .group-info[data-type="Discs"] [data-material="Wood"] {
+      display: none;
+    }
 
 
     @media only screen and (min-width: 1025px) {
       #canvas {
-        margin-top: 20px;
+        margin-top: 0;
         width: calc(66.667% - 50px);
-        height: calc(100vh - 117px);
+        height: calc(100vh - 97px);
 
         border-radius: 5px;
         overflow: hidden;
@@ -1149,17 +1169,36 @@
         background: #EDEBE9;
         height: 50vw !important;
       }
-      body.bespoke-intro.bespoke-chosen #canvas {
+      body.bespoke-intro.mobile-model #canvas {
+        margin-top: 29px;
         opacity: 1;
         visibility: visible;
 
         -webkit-transition: opacity .15s linear .2s;
         transition: opacity .15s linear .2s;
       }
+      body.bespoke-intro.bespoke-chosen #canvas {
+        margin-top: 0;
+        opacity: 1;
+        visibility: visible;
+
+        -webkit-transition: opacity .15s linear .2s;
+        transition: opacity .15s linear .2s;
+      }
+      body.bespoke-intro.mobile-model .bespoke-list {
+        opacity: 0;
+        visibility: hidden;
+      }
+      body.bespoke-intro.mobile-model #MainContent .bespoke-choice .bespoke-knife-description {
+        margin-top: 52vw;
+      }
     }
     @media only screen and (max-width: 500px) {
       #canvas canvas {
         height: 250px !important;
+      }
+      body.bespoke-intro.mobile-model #MainContent .bespoke-choice .bespoke-knife-description {
+        margin-top: 250px;
       }
     }
 
@@ -1204,7 +1243,8 @@
             </g>
           </g>
         </svg>
-        <div class="ch-step">Step <span>1</span>/7</div>
+        <div class="ch-step"><span>1</span>/7</div>
+        <div class="ch-name"></div>
       </div>
       <div class="ch-right">
         <div class="ch-change">Change knife</div>
@@ -1219,6 +1259,7 @@
         <span class="divider">/</span>
         <div class="ch-close">
           <span>Close</span>
+          <span style="display:none;">Cerrar</span>
         </div>
       </div>
     </div>
@@ -1236,7 +1277,8 @@
               </g>
             </g>
           </svg>
-          <div class="ch-step">Step <span>1</span>/7</div>
+          <div class="ch-step"><span>1</span>/7</div>
+          <div class="ch-name"></div>
         </div>
         <div class="ch-right">
           <div class="ch-change">Change knife</div>
@@ -1247,10 +1289,6 @@
             <span>Share</span>
             <span>Copy link</span>
             <span>Link copied</span>
-          </div>
-          <span class="divider">/</span>
-          <div class="ch-close">
-            <span>Close</span>
           </div>
         </div>
       </div>
@@ -1299,6 +1337,32 @@
 
           let initialize = 0;
           let windowLocationUsed = true;
+          let savedWood = [];
+
+          let langBespoke = document.documentElement.lang;
+
+          let bespokeSwiper;
+
+
+          const colorTranslations = {
+            "Black": "Negro",
+            "Tan": "Canela",
+            "Brown": "Marrón",
+            "Green": "Verde",
+            "Blue": "Azul",
+            "Purple": "Morado",
+            "Pink": "Rosa",
+            "Red": "Rojo",
+            "Orange": "Naranja",
+            "Yellow": "Amarillo",
+            "Ivory": "Marfil",
+            "Light wood": "Madera clara",
+            "Dark wood": "Madera oscura",
+            "Brass": "Latón"
+          };
+          const translateLabel = (englishLabel) => {
+            return colorTranslations[englishLabel] || englishLabel; // Fallback to English if no translation
+          };
 
           async function fetchCollectionsData() {
             try {
@@ -1434,7 +1498,7 @@
                   });
                 }
               } 
-              else if (group.name.includes("Logo")) 
+              else if (group.name.includes("Logo")) {
                 const logoNodes = group.groupedNodes;
                 const engravingSelected = document.querySelector('#laserEngraving input:checked')?.id === "laser-engraving";
           
@@ -1556,6 +1620,10 @@
               }, 100)
             });
             colorEl.addEventListener("mouseenter", () => {
+              if (document.documentElement.lang === 'es') {
+                justName = translateLabel(justName);
+              }
+
               if(material.name === 'Discs') {
                 document.querySelector('div[data-type="Discs"] .group-header > span').innerText = '('+justName+')';
               }else{
@@ -1574,7 +1642,10 @@
                     if (!section.querySelector('.section-price')) {
                       let priceDiv = document.createElement('div');
                       priceDiv.className = 'section-price section-price-hover';
-                      priceDiv.textContent = `+${window.currency_symbol}${price}`;
+                      if (document.documentElement.lang === 'es' && price === 'Added cost') {
+                        price = 'Costo adicional';
+                      }
+                      priceDiv.textContent = `+${price}`;
                       section.appendChild(priceDiv);
                     }
                   }
@@ -1613,7 +1684,22 @@
               groupHeader.classList.add("group-header");
 
               const groupName = document.createElement("h3");
-              groupName.textContent = group.name; // Берем имя группы из refGroups
+              let groupTitle = group.name;
+              if(document.documentElement.lang === 'es') {
+                if(group.name === 'Leather Spacers') {
+                  groupTitle = 'Espaciadores de cuero';
+                }
+                if(group.name === 'Discs') {
+                  groupTitle = 'Discos';
+                }
+                if(group.name === 'Pommel') {
+                  groupTitle = 'Pomo';
+                }
+                if(group.name === 'Bolster') {
+                  groupTitle = 'Virola';
+                }
+              }
+              groupName.textContent = groupTitle; // Берем имя группы из refGroups
               const groupLabel = document.createElement("span");
               groupHeader.appendChild(groupName);
               groupHeader.appendChild(groupLabel);
@@ -1690,9 +1776,24 @@
             containerItems.classList.add("items");
 
             const title = document.createElement("h3");
-            title.textContent =
-                    modelType === "handles" ? "Logic" : "Choose one";
+            if(document.documentElement.lang === 'es') {
+              title.textContent =
+                      modelType === "handles" ? "Lógica" : "Selecciona uno";
+            }else{
+              title.textContent =
+                      modelType === "handles" ? "Logic" : "Choose one";
+            }
             container.appendChild(title);
+
+            models.sort((a, b) => {
+              const order = {
+                "Random": 1,
+                "Pattern—Wide": 2,
+                "Pattern—Thin": 3
+              };
+
+              return order[a.textFileName] - order[b.textFileName];
+            });
 
             models.forEach((model) => {
               const label = document.createElement("label");
@@ -1716,13 +1817,19 @@
               radio.checked = currentModel?.fileName === model.fileName;
 
               radio.addEventListener("change", () => {
-                // console.log('geometry & logic change');
-
                 const getCheckedValue = () => {
                   const checkedRadio = document.querySelector('input[name="model-steel"]:checked');
                   return checkedRadio ? checkedRadio.value : null;
                 };
                 chosenSteel = getCheckedValue();
+                console.log('chosenSteel', chosenSteel);
+
+                if(radio.getAttribute('id') === 'pattern—thin') {
+                  document.getElementById('handleDesign').classList.add('no-wood');
+                }
+                if(radio.getAttribute('id') === 'random' || radio.getAttribute('id') === 'pattern—wide') {
+                  document.getElementById('handleDesign').classList.remove('no-wood');
+                }
 
                 if (radio.checked) {
                   if (modelType === "handles") {
@@ -1747,8 +1854,24 @@
                           appData.currentModels.handle,
                           appData.currentModels.blade
                   );
+                  const discs = document.querySelectorAll('#handleDesign .group-info[data-type="Discs"] button');
+                  const woodDiscs = Array.from(discs).filter(disc => disc.getAttribute('data-material') === 'Wood');
 
-
+                  if (radio.getAttribute('id') === 'pattern—thin') {
+                    savedWood = woodDiscs
+                            .filter(disc => disc.classList.contains('color-sample-active'))
+                            .map(disc => {
+                              disc.click();
+                              return disc.getAttribute('data-name');
+                            });
+                  } else {
+                    woodDiscs.forEach(disc => {
+                      if (savedWood.includes(disc.getAttribute('data-name'))) {
+                        disc.click();
+                      }
+                    });
+                    savedWood = [];
+                  }
                 }
 
                 setTimeout(function(){
@@ -1780,7 +1903,11 @@
 
             const steelModelSelector = document.createElement('div');
             steelModelSelector.className = 'model-selector';
-            steelModelSelector.innerHTML = `<h3>Choose one</h3>`;
+            if(document.documentElement.lang === 'es') {
+              steelModelSelector.innerHTML = `<h3>Selecciona uno</h3>`;
+            }else{
+              steelModelSelector.innerHTML = `<h3>Choose one</h3>`;
+            }
 
             const steelItems = document.createElement('div');
             steelItems.className = 'steel-items';
@@ -1847,9 +1974,20 @@
                   geometryElements.forEach(item => item.style.display = 'none');
                 }
 
+                let firstChecked = false;
+
                 selectedGeometry.forEach(item => {
-                  document.querySelectorAll('input[value="'+item+'"]').forEach(input => input.closest('.step-item').style.display = 'block');
-                })
+                  document
+                          .querySelectorAll(`#bladeGeometry input[value="${item}"]`)
+                          .forEach(input => {
+                            input.closest('.step-item').style.display = 'block';
+
+                            if (!firstChecked) {
+                              input.checked = true;
+                              firstChecked = true;
+                            }
+                          });
+                });
 
                 const geometryInputs = document.querySelectorAll('#bladeGeometry input');
                 const activeGeometry = document.querySelector('#bladeGeometry input:checked');
@@ -1863,12 +2001,20 @@
 
                 // Обновляем контент шага 3
                 const step3Content = document.getElementById('bladeFinish');
+                let finishTitle = 'Select Blade Finish';
+                if(document.documentElement.lang === 'es') {
+                  finishTitle = 'Seleccionar acabado';
+                }
                 if (step3Content && selectedFinishes) {
-                  step3Content.innerHTML = '<h2 class="section-title">Select Blade Finish</h2>';
+                  step3Content.innerHTML = '<h2 class="section-title">'+finishTitle+'</h2>';
 
                   const finishSelector = document.createElement('div');
                   finishSelector.className = 'model-selector';
-                  finishSelector.innerHTML = `<h3>Choose one</h3>`;
+                  if(document.documentElement.lang === 'es') {
+                    finishSelector.innerHTML = `<h3>Selecciona uno</h3>`;
+                  }else{
+                    finishSelector.innerHTML = `<h3>Choose one</h3>`;
+                  }
 
                   const finishItems = document.createElement('div');
                   finishItems.className = 'finish-items';
@@ -1939,7 +2085,6 @@
                       ...currentBlade,
                       nodeMaterials: createNodeMaterials(currentBlade),
                     };
-
                     appData.currentModels.blade = updatedBladeModel;
                     document.shopifyConnect.triggerBladeModelChange(updatedBladeModel);
                   }
@@ -1992,6 +2137,17 @@
             const step4Content = document.getElementById('handleDesign');
             container.id = "models-display";
 
+            if(document.documentElement.lang === 'es') {
+              document.getElementById('laserEngraving').querySelector('label[for="no-engraving"] span:not(.price)').innerText = 'Dejar limpio';
+              document.getElementById('laserEngraving').querySelector('label[for="laser-engraving"] span:not(.price)').innerText = 'Grabado láser';
+              document.getElementById('laserEngraving').querySelector('label[for="laser-engraving"] input').placeholder = 'Ingresa tu grabado';
+              document.getElementById('laserEngraving').querySelector('h2.section-title').innerText = 'Grabado láser';
+              document.getElementById('optionalAddons').querySelector('h2.section-title').innerText = 'Add-on\'s opcionales';
+              document.getElementById('orderNotes').querySelector('h2.section-title').innerText = 'Añadir notas al pedido';
+              document.getElementById('orderNotes').querySelector('textarea').placeholder = 'Ingresa cualquier nota sobre tu pedido';
+              document.querySelector('.cf-add-to-cart').innerText = 'Añadir al carrito';
+            }
+
 
             const steelContainer = document.createElement('div');
             const geometryContainer = document.createElement('div');
@@ -2009,7 +2165,11 @@
               const excludedSteps = ['logic', 'leather', 'colors', 'pommel', 'bolster'];
               if (currentStep !== 'handleDesign' && !excludedSteps.includes(stepInit)) {
                 let steelSelector = createModelSteelFinish(bladeModels);
-                step1Content.innerHTML = '<h2 class="section-title">Select Steel</h2>';
+                let steelTitle = 'Select Steel';
+                if(document.documentElement.lang === 'es') {
+                  steelTitle = 'Seleccionar acero';
+                }
+                step1Content.innerHTML = '<h2 class="section-title">'+steelTitle+'</h2>';
 
                 steelContainer.classList.add('section-container');
                 steelContainer.appendChild(steelSelector);
@@ -2017,14 +2177,24 @@
               }
 
               if(step2Content.innerHTML === '') {
-                step2Content.innerHTML = '<h2 class="section-title">Select Geometry</h2>';
+                let geomTitle = 'Select Geometry';
+                if(document.documentElement.lang === 'es') {
+                  geomTitle = 'Seleccionar geometría';
+                }
+                step2Content.innerHTML = '<h2 class="section-title">'+geomTitle+'</h2>';
 
                 geometryContainer.classList.add('section-container');
                 geometryContainer.appendChild(bladeSelector);
                 step2Content.appendChild(geometryContainer);
               }
 
-              step4Content.innerHTML = '<h2 class="section-title">Design Handle</h2><span class="generate"><svg xmlns="http://www.w3.org/2000/svg" width="13.502" height="13.647" viewBox="0 0 13.502 13.647"><g id="noun-generate-6501311" transform="translate(-8.928 -2.674)"><path id="Path_38301" data-name="Path 38301" d="M56.608,23.792l.447.15a.5.5,0,0,1,.333.376l.258,1.3v.014l.014.018a.584.584,0,0,0,.519.319.576.576,0,0,0,.512-.319l.011-.021v-.011l.2-1.178a.733.733,0,0,1,.53-.537l1.149-.211H60.6l.014-.011a.563.563,0,0,0,.3-.476.546.546,0,0,0-.276-.49l-.025-.014h-.007l-.018-.011-1.16-.208a.739.739,0,0,1-.533-.533l-.208-1.16v-.011l-.011-.018a.547.547,0,0,0-.981,0l-.007.018v.011l-.211,1.16a.739.739,0,0,1-.533.533l-1.031.2h-.011L55.9,22.7l-.014.007a.574.574,0,0,0-.268.276.5.5,0,0,0-.011.379c.093.236.7.319,1.024.437Z" transform="translate(-38.488 -9.651)" fill="#381409"/><path id="Path_38303" data-name="Path 38303" d="M56.608,23.792l.447.15a.5.5,0,0,1,.333.376l.258,1.3v.014l.014.018a.584.584,0,0,0,.519.319.576.576,0,0,0,.512-.319l.011-.021v-.011l.2-1.178a.733.733,0,0,1,.53-.537l1.149-.211H60.6l.014-.011a.563.563,0,0,0,.3-.476.546.546,0,0,0-.276-.49l-.025-.014h-.007l-.018-.011-1.16-.208a.739.739,0,0,1-.533-.533l-.208-1.16v-.011l-.011-.018a.547.547,0,0,0-.981,0l-.007.018v.011l-.211,1.16a.739.739,0,0,1-.533.533l-1.031.2h-.011L55.9,22.7l-.014.007a.574.574,0,0,0-.268.276.5.5,0,0,0-.011.379c.093.236.7.319,1.024.437Z" transform="translate(-38.488 -17.786)" fill="#381409"/><path id="Path_38302" data-name="Path 38302" d="M34.846,9.853l.079.029.429,1.7.007.018.011.025a.787.787,0,0,0,.709.433.8.8,0,0,0,.7-.437l.014-.029v-.014l.422-1.722,1.7-.44.018-.007.018-.011a.754.754,0,0,0,.036-1.328l-.036-.021-.011-.007-.025-.007L37.2,7.6l-.433-1.718V5.866l-.014-.021a.753.753,0,0,0-1.346,0l-.011.021v.014L34.964,7.6l-1.7.429-.014.007-.014.007-.021.011a.77.77,0,0,0-.365.379.688.688,0,0,0-.014.519c.129.322,1.578.744,2.022.905Z" transform="translate(-23.859 0)" fill="#381409"/></g></svg>\nGenerate Design</span>';
+              let generateTitle = 'Generate Design';
+              let designTitle = 'Design Handle';
+              if(document.documentElement.lang === 'es') {
+                generateTitle = 'Generar un diseño';
+                designTitle = 'Diseñar mango';
+              }
+              step4Content.innerHTML = '<h2 class="section-title">'+designTitle+'</h2><span class="generate"><svg xmlns="http://www.w3.org/2000/svg" width="13.502" height="13.647" viewBox="0 0 13.502 13.647"><g id="noun-generate-6501311" transform="translate(-8.928 -2.674)"><path id="Path_38301" data-name="Path 38301" d="M56.608,23.792l.447.15a.5.5,0,0,1,.333.376l.258,1.3v.014l.014.018a.584.584,0,0,0,.519.319.576.576,0,0,0,.512-.319l.011-.021v-.011l.2-1.178a.733.733,0,0,1,.53-.537l1.149-.211H60.6l.014-.011a.563.563,0,0,0,.3-.476.546.546,0,0,0-.276-.49l-.025-.014h-.007l-.018-.011-1.16-.208a.739.739,0,0,1-.533-.533l-.208-1.16v-.011l-.011-.018a.547.547,0,0,0-.981,0l-.007.018v.011l-.211,1.16a.739.739,0,0,1-.533.533l-1.031.2h-.011L55.9,22.7l-.014.007a.574.574,0,0,0-.268.276.5.5,0,0,0-.011.379c.093.236.7.319,1.024.437Z" transform="translate(-38.488 -9.651)" fill="#381409"/><path id="Path_38303" data-name="Path 38303" d="M56.608,23.792l.447.15a.5.5,0,0,1,.333.376l.258,1.3v.014l.014.018a.584.584,0,0,0,.519.319.576.576,0,0,0,.512-.319l.011-.021v-.011l.2-1.178a.733.733,0,0,1,.53-.537l1.149-.211H60.6l.014-.011a.563.563,0,0,0,.3-.476.546.546,0,0,0-.276-.49l-.025-.014h-.007l-.018-.011-1.16-.208a.739.739,0,0,1-.533-.533l-.208-1.16v-.011l-.011-.018a.547.547,0,0,0-.981,0l-.007.018v.011l-.211,1.16a.739.739,0,0,1-.533.533l-1.031.2h-.011L55.9,22.7l-.014.007a.574.574,0,0,0-.268.276.5.5,0,0,0-.011.379c.093.236.7.319,1.024.437Z" transform="translate(-38.488 -17.786)" fill="#381409"/><path id="Path_38302" data-name="Path 38302" d="M34.846,9.853l.079.029.429,1.7.007.018.011.025a.787.787,0,0,0,.709.433.8.8,0,0,0,.7-.437l.014-.029v-.014l.422-1.722,1.7-.44.018-.007.018-.011a.754.754,0,0,0,.036-1.328l-.036-.021-.011-.007-.025-.007L37.2,7.6l-.433-1.718V5.866l-.014-.021a.753.753,0,0,0-1.346,0l-.011.021v.014L34.964,7.6l-1.7.429-.014.007-.014.007-.021.011a.77.77,0,0,0-.365.379.688.688,0,0,0-.014.519c.129.322,1.578.744,2.022.905Z" transform="translate(-23.859 0)" fill="#381409"/></g></svg>\n'+generateTitle+'</span>';
               handleContainer.classList.add('section-container');
               handleContainer.appendChild(handleSelector);
 
@@ -2067,7 +2237,15 @@
                     }
                     if(knifeEl[0] === 'logic') {
                       stepInit = 'logic';
-                      document.querySelector('#handleDesign label[for="'+knifeEl[1]+'"]').click();
+
+                    let targetValue = knifeEl[1];
+                  
+                    if (targetValue.includes('%E2%80%94')) {
+                      targetValue = targetValue.split('%E2%80%94').join('—');
+                    }
+
+                      const label = document.querySelector('#handleDesign label[for="' + targetValue + '"]');
+                      if (label) label.click();
                     }
 
                     if (knifeEl[0] === 'leather') {
@@ -2136,7 +2314,21 @@
               }
               if (window.location.search && window.location.search.indexOf('&') === -1 && initialize === 0) {
                 let searchKnife = window.location.search.split('=')[1];
-                document.querySelector('.bespoke-product[data-handle="' + searchKnife + '"]')?.click();
+                if(window.innerWidth > 1024) {
+                  document.querySelector('.bespoke-product[data-handle="' + searchKnife + '"]')?.click();
+                }else{
+                  document.querySelector('.bespoke-start').click();
+                  let chosenSlide = document.querySelector('.bespoke-product[data-handle="' + searchKnife + '"]');
+                  let chosenSlideIndex;
+                  if (chosenSlide) {
+                    chosenSlideIndex = [...chosenSlide.parentNode.children].indexOf(chosenSlide);
+                  }
+                  document.querySelector('.bespoke-product[data-handle="' + searchKnife + '"]')?.click();
+                  setTimeout(function (){
+                    // bespokeSwiper.update();
+                    bespokeSwiper.slideTo(chosenSlideIndex, 0);
+                  },1)
+                }
                 initialize = 1;
               }
             }
@@ -2146,6 +2338,13 @@
               existing.replaceWith(container);
             } else {
               document.body.appendChild(container);
+            }
+
+
+            if(document.documentElement.lang === 'es') {
+              document.querySelector('label[for="random"] span').innerText = 'Aleatorio';
+              document.querySelector('label[for="pattern—wide"] span').innerText = 'Patrón ancho';
+              document.querySelector('label[for="pattern—thin"] span').innerText = 'Patrón fino';
             }
           }
 
@@ -2161,7 +2360,6 @@
               document.shopifyConnect.triggerHandleModelChange(handleWithMaterials);
             }
             if (bladeModel) {
-              console.log('bladeModel',bladeModel)
               bladeWithMaterials = {
                 ...bladeModel,
                 nodeMaterials: createNodeMaterials(bladeModel),
@@ -2193,6 +2391,10 @@
             laserStep();
 
             nextButton.addEventListener("click", () => {
+              if(document.querySelector('#bladeGeometry input#special-edition')) {
+                // console.log('yes');
+                // document.querySelector('#bladeGeometry input#special-edition').parentElement.style.visibility = 'hidden';
+              }
               const activeStep = document.querySelector(".bespoke-step.active");
               if (activeStep) {
                 getKnifeInfo();
@@ -2245,6 +2447,7 @@
                   // setCameraPosition(step, x, y, z);
                 }else{
                   changeButton.click();
+                  document.querySelector('.bespoke-knife-description').style.visibility = `visible`;
                 }
 
 
@@ -2282,16 +2485,21 @@
                   // setCameraPosition(step, x, y, z);
                 }else{
                   changeButtonMobile.click();
+                  document.querySelector('.bespoke-knife-description').style.visibility = `visible`;
                 }
               }
             });
             changeButton.addEventListener("click", () => {
+              document.getElementById('handleDesign').classList.remove('no-wood');
               document.querySelector('.canvas-engraving').classList.remove('shown');
               saveBespokeKnife($('.bespoke-product.active').attr('data-handle'));
+              nextButton.style.display = 'flex';
+              addToCart.style.display = 'none';
 
               document.querySelector('body.bespoke-intro .bespoke-customizer').classList.remove('show');
               allSteps.forEach(step => step.classList.remove('active'));
               allSteps[0].classList.add('active');
+
               laserStep();
               document.querySelector('.customizer-header .ch-back .ch-step span').innerText = '1';
 
@@ -2299,12 +2507,15 @@
               document.querySelector('body.bespoke-intro .bespoke-choice').classList.remove('non-visible');
             });
             changeButtonMobile.addEventListener("click", () => {
+              document.getElementById('handleDesign').classList.remove('no-wood');
               document.querySelector('.canvas-engraving').classList.remove('shown');
               saveBespokeKnife($('.bespoke-product.active').attr('data-handle'));
+              nextButton.style.display = 'flex';
+              addToCart.style.display = 'none';
 
-              document.querySelector('body.bespoke-intro .bespoke-list .swiper-wrapper').classList.remove('chosen');
-              document.querySelector('body.bespoke-intro .bespoke-list .swiper-wrapper .swiper-slide.active').classList.remove('active');
-              document.querySelector('body.bespoke-intro #MainContent .bespoke-choice .bespoke-choice-footer.show').classList.add('inactive');
+              // document.querySelector('body.bespoke-intro .bespoke-list .swiper-wrapper').classList.remove('chosen');
+              // document.querySelector('body.bespoke-intro .bespoke-list .swiper-wrapper .swiper-slide.active').classList.remove('active');
+              // document.querySelector('body.bespoke-intro #MainContent .bespoke-choice .bespoke-choice-footer.show').classList.add('inactive');
 
               document.querySelector('.bespoke-customizer').classList.remove('show');
               allSteps.forEach(step => step.classList.remove('active'));
@@ -2462,12 +2673,15 @@
             let laserEngravingPrice = parseInt(laserEngravingProduct.dataset.price)/100;
             let laserEngravingId = laserEngravingProduct.dataset.id;
             let laserEngravingHandle = laserEngravingProduct.dataset.handle;
+            let chooseText = 'Choose one';
+            if(document.documentElement.lang === 'es') {
+              chooseText = 'Selecciona uno';
+            }
 
             let laserHtml =
-
                     document.querySelector('#laserEngraving').innerHTML = '<h2 class="section-title">Laser Engraving</h2>'+
                             '<div class="laser-selector">' +
-                            '<h3>Choose one</h3>'+
+                            '<h3>'+chooseText+'</h3>'+
                             '<ul>' +
                             '<li>' +
                             '<input type="radio" name="engraving" id="no-engraving" checked>' +
@@ -2481,7 +2695,7 @@
                             '<label for="laser-engraving">' +
                             '<span>Laser engraving</span>' +
                             '<input type="text" maxlength="18" placeholder="Type your engraving here" style="display:none;"/>'+
-                            '<span class="price">+'+window.currency_symbol+laserEngravingPrice+'</span>' +
+                            '<span class="price">+'+laserEngravingPrice+'</span>' +
                             '</label>' +
                             '</li>'+
                             '</ul>' +
@@ -2519,11 +2733,20 @@
           function getElementInfo(element, item, type){
             $(element).find(item).each(function(){
               let itemTitle = $(this).find('input').val().toLowerCase();
+              let itemEsTitle = '';
               let itemDiv = $('.bespoke-knife[data-knife="'+activeKnife+'"] div.'+type+'[data-title="'+itemTitle+'"]');
 
               let itemComingSoon = itemDiv.attr('data-comingsoon');
+              let itemDisabled = itemDiv.attr('data-disabled');
               let itemDescription = itemDiv.find('.description').html();
-              let itemPrice = parseInt(itemDiv.attr('data-price'));
+              if(langBespoke === 'es') {
+                itemEsTitle = itemDiv.attr('data-title-es');
+                itemDescription = itemDiv.find('.description-es').html();
+              }
+              let itemPrice = itemDiv.attr('data-price');
+              if (!isNaN(parseInt(itemPrice))) {
+                itemPrice = parseInt(itemDiv.attr('data-price'));
+              }
 
               if($(this).find('.el-description').length) {
                 $(this).find('.el-description').remove();
@@ -2533,10 +2756,26 @@
               }
 
               if(itemDiv.length) {
+                if(itemEsTitle !== '') {
+                  if (itemDiv.hasClass('geometry')) {
+                    $(this).find('label > span').text(itemEsTitle);
+                  }else{
+                    $(this).find('label > p').text(itemEsTitle);
+                  }
+                }
                 $(this).attr('data-comingsoon',itemComingSoon);
+                $(this).attr('data-disabled',itemDisabled);
                 $(this).find('label').append('<div class="el-description">'+itemDescription+'</div>');
-                if(itemPrice > 0){
-                  $(this).find('label').append('<div class="el-price">+'+window.currency_symbol+itemPrice+'</div>');
+                if (typeof itemPrice === 'number' && Number.isFinite(itemPrice)) {
+                  if(itemPrice > 0){
+                    $(this).find('label').append('<div class="el-price">+'+itemPrice+'</div>');
+                  }
+                } else {
+                  if(document.documentElement.lang === 'es') {
+                    $(this).find('label').append('<div class="el-price">+Costo adicional</div>');
+                  }else{
+                    $(this).find('label').append('<div class="el-price">+'+itemPrice+'</div>');
+                  }
                 }
               }
             })
@@ -2645,6 +2884,15 @@
               { max: Infinity, position: [200, 600, 320] }
             ];
 
+            const longShotMedium = [
+              { max: 500, position: [100, 300, 300] },
+              { max: 820, position: [100, 400, 250] },
+              { max: 1024, position: [100, 500, 300] },
+              { max: 1440, position: [200, 600, 350] },
+              { max: 1750, position: [200, 600, 380] },
+              { max: 1920, position: [200, 600, 350] },
+              { max: Infinity, position: [200, 600, 350] }
+            ];
             const longShotSmall = [
               { max: 500, position: [100, 300, 270] },
               { max: 820, position: [100, 400, 220] },
@@ -2698,6 +2946,16 @@
               7: longShot,
               8: longShot
             };
+            const mediumBreakpoints = {
+              1: longShotMedium,
+              2: closeUp,
+              3: dutchAngle,
+              4: closeUp,
+              5: closeUpHandle,
+              6: backShot,
+              7: longShot,
+              8: longShot
+            };
             const smallBreakpoints = {
               1: longShotSmall,
               2: closeUpSmall,
@@ -2713,6 +2971,7 @@
             if(knifeSize === 'large') {
               document.querySelector('body').classList.remove('bespoke-medium', 'bespoke-small');
             }else if(knifeSize === 'medium') {
+              breakpoints = { ...mediumBreakpoints };
               document.querySelector('body').classList.remove('bespoke-small');
               document.querySelector('body').classList.add('bespoke-medium');
             }else{
@@ -2723,8 +2982,6 @@
 
             // Определяем, какой набор контрольных точек использовать
             const selectedBreakpoints = breakpoints[type] || longShot;
-
-            console.log(selectedBreakpoints);
           
             // Перебираем контрольные точки и находим подходящую на основе ширины окна
             for (let i = 0; i < selectedBreakpoints.length; i++) {
@@ -2808,6 +3065,12 @@
                 let activePommelLabel = document.querySelector('.group-info[data-type="Pommel"] .color-sample-active')?.getAttribute('data-name') || '';
                 let activeBolsterLabel = document.querySelector('.group-info[data-type="Bolster"] .color-sample-active')?.getAttribute('data-name') || '';
 
+                if (document.documentElement.lang === 'es') {
+                  activeLsLabels = activeLsLabels.split(', ').map(label => translateLabel(label)).join(', ');
+                  activePommelLabel = translateLabel(activePommelLabel);
+                  activeBolsterLabel = translateLabel(activeBolsterLabel);
+                }
+
                 // Get materials
                 let pommelMaterial = document.querySelector('.group-info[data-type="Pommel"] .color-sample-active')?.getAttribute('data-material') || '';
                 let bolsterMaterial = document.querySelector('.group-info[data-type="Bolster"] .color-sample-active')?.getAttribute('data-material') || '';
@@ -2822,7 +3085,10 @@
                     let pommelSection = document.querySelector('.group-info[data-type="Pommel"]');
                     let priceDiv = document.createElement('div');
                     priceDiv.className = 'section-price';
-                    priceDiv.textContent = `+${window.currency_symbol}${pommelPrice}`;
+                    if (document.documentElement.lang === 'es' && pommelPrice === 'Added cost') {
+                      pommelPrice = 'Costo adicional';
+                    }
+                    priceDiv.textContent = `+${pommelPrice}`;
                     pommelSection.appendChild(priceDiv);
                   }
                 }
@@ -2833,7 +3099,10 @@
                     let bolsterSection = document.querySelector('.group-info[data-type="Bolster"]');
                     let priceDiv = document.createElement('div');
                     priceDiv.className = 'section-price';
-                    priceDiv.textContent = `+${window.currency_symbol}${bolsterPrice}`;
+                    if (document.documentElement.lang === 'es' && bolsterPrice === 'Added cost') {
+                      bolsterPrice = 'Costo adicional';
+                    }
+                    priceDiv.textContent = `+${bolsterPrice}`;
                     bolsterSection.appendChild(priceDiv);
                   }
                 }
@@ -2841,9 +3110,21 @@
                 document.querySelector('.group-info[data-type="Leather Spacers"] .group-header span').textContent = `(${activeLsLabels})`;
                 document.querySelector('.group-info[data-type="Pommel"] .group-header span').textContent = `(${activePommelLabel})`;
                 document.querySelector('.group-info[data-type="Bolster"] .group-header span').textContent = `(${activeBolsterLabel})`;
-
               }
             })
+
+
+            const targetElement = document.querySelector('body.bespoke-intro #MainContent .bespoke-customizer #handleDesign.bespoke-step .section-container');
+            if (targetElement && window.innerWidth <= 1024) {
+              if(sessionStorage.getItem('colorsScroll')) {
+                targetElement.scrollTop = sessionStorage.getItem('colorsScroll');
+                sessionStorage.removeItem('colorsScroll');
+              }
+              targetElement.addEventListener('scroll', function() {
+                const scrollTop = targetElement.scrollTop;
+                sessionStorage.setItem('colorsScroll', scrollTop);
+              });
+            }
           }
 
           function getBespokeVariant() {
@@ -2903,9 +3184,9 @@
 
               if (priceInCurrency) {
                 const productNewPrice =
-                        window.currency_symbol + (parseInt(priceInCurrency.price.amount)+engravingPrice+addonsPrice);
+                        (parseInt(priceInCurrency.price.amount)+engravingPrice+addonsPrice);
                 const subtotalElement = document.querySelector('.cf-subtotal span.subtotal-price');
-                subtotalElement.textContent = productNewPrice;
+                subtotalElement.textContent = window.currency_symbol+productNewPrice;
               }
             }
           }
@@ -2966,13 +3247,13 @@
           }
 
           function buildCart(){
+
             $.ajax({
               type: 'GET',
               url: '/cart.js',
               cache: false,
               dataType: 'json',
               success: function(cart) {
-                console.log('cart is building');
                 let cartSubtotal = cart.total_price / 100;
                 let cartCount = cart.item_count;
 
@@ -2989,19 +3270,25 @@
                     cartImageHtml = '<div class="cartImage"><img src="'+cartItem.image+'" alt="'+cartItem.properties.Name+'"></div>';
                   }
 
+                  let cartProperties = ['Model', 'Steel', 'Blade Geometry', 'Blade Finish', 'Handle Leather', 'Bolster', 'Pommel', 'Handle Colours', 'Laser Etching', 'Notes'];
+
+                  if(document.documentElement.lang === 'es') {
+                    cartProperties = ['Modelo', 'Acero', 'Geometría de la Hoja', 'Acabado de la Hoja', 'Espaciadores de cuero', 'Virola', 'Pomo', 'Colores del Mango', 'Grabado láser', 'Notas'];
+                  }
+
                   if(Object.keys(cartItem.properties).length > 1) {
                     cartItemTitle = cartItem.properties.Name;
                     cartItemProperties = '<div class="cartItemProperties">' +
-                            '<div class="cartItemModel">Model: '+cartItem.properties.Model+'</div>' +
-                            '<div class="cartItemSteel">Steel: '+cartItem.properties.Steel+'</div>' +
-                            '<div class="cartItemGeometry">Blade Geometry: '+cartItem.properties.Geometry+'</div>' +
-                            '<div class="cartItemFinish">Blade Finish: '+cartItem.properties.Finish+'</div>' +
-                            '<div class="cartItemLeather">Handle Leather: '+cartItem.properties.Leather+'</div>' +
-                            '<div class="cartItemBolster">Bolster: '+cartItem.properties.Bolster+'</div>' +
-                            '<div class="cartItemPommel">Pommel: '+cartItem.properties.Pommel+'</div>' +
-                            '<div class="cartItemColours">Handle Colours: '+cartItem.properties.Colours+'</div>' +
-                            '<div class="cartItemLaserEtching">Laser Etching: '+cartItem.properties["Laser Etching"]+'</div>' +
-                            '<div class="cartItemNotes">Notes: '+cartItem.properties.Notes+'</div>' +
+                            '<div class="cartItemModel">'+cartProperties[0]+': '+cartItem.properties.Model+'</div>' +
+                            '<div class="cartItemSteel">'+cartProperties[1]+': '+cartItem.properties.Steel+'</div>' +
+                            '<div class="cartItemGeometry">'+cartProperties[2]+': '+cartItem.properties.Geometry+'</div>' +
+                            '<div class="cartItemFinish">'+cartProperties[3]+': '+cartItem.properties.Finish+'</div>' +
+                            '<div class="cartItemLeather">'+cartProperties[4]+': '+cartItem.properties.Leather+'</div>' +
+                            '<div class="cartItemBolster">'+cartProperties[5]+': '+cartItem.properties.Bolster+'</div>' +
+                            '<div class="cartItemPommel">'+cartProperties[6]+': '+cartItem.properties.Pommel+'</div>' +
+                            '<div class="cartItemColours">'+cartProperties[7]+': '+cartItem.properties.Colours+'</div>' +
+                            '<div class="cartItemLaserEtching">'+cartProperties[8]+': '+cartItem.properties["Laser Etching"]+'</div>' +
+                            '<div class="cartItemNotes">'+cartProperties[9]+': '+cartItem.properties.Notes+'</div>' +
                             '</div>';
                   }
 
@@ -3089,7 +3376,6 @@
 
           function saveBespokeKnife(knife){
             sessionStorage.setItem(knife, buildUrl());
-            console.log(window.sessionStorage);
           }
 
           async function copyToClipboard(text) {
@@ -3106,10 +3392,21 @@
             appData.currentCollection = findCollectionById(TARGET_COLLECTION_ID);
 
             if (appData.currentCollection) {
-              const initialHandle = getModelsByType(
+              let handlesArr = getModelsByType(
                       appData.currentCollection,
                       "handles"
-              )[0];
+              );
+              handlesArr.sort((a, b) => {
+                const order = {
+                  "Random": 1,
+                  "Pattern—Wide": 2,
+                  "Pattern—Thin": 3
+                };
+
+                return order[a.textFileName] - order[b.textFileName];
+              });
+
+              const initialHandle = handlesArr[0];
               const initialBlade = getModelsByType(
                       appData.currentCollection,
                       "blades"
@@ -3136,18 +3433,25 @@
 
           document.addEventListener('click', function(event) {
             if (event.target.closest('.bespoke-step .generate')) {
-
-
+              let discs;
               function generateKnifeHandle() {
+                const checkedRadio = document.querySelector('input[name="handles-model"]:checked');
+                const checkedId = checkedRadio ? checkedRadio.id : null;
+
                 // Get all available parts
                 const leatherSpacers = document.querySelectorAll('.group-info[data-type="Leather Spacers"] button.color-sample');
-                const discs = document.querySelectorAll('.group-info[data-type="Discs"] button.color-sample');
+                discs = document.querySelectorAll('.group-info[data-type="Discs"] button.color-sample');
                 const pommels = document.querySelectorAll('.group-info[data-type="Pommel"] button.color-sample');
                 const bolsters = document.querySelectorAll('.group-info[data-type="Bolster"] button.color-sample');
 
                 // Count available elements
                 const numLeatherSpacers = leatherSpacers.length;
-                const numDiscs = discs.length;
+                let numDiscs = discs.length;
+
+                if(checkedId === 'pattern—thin') {
+                  discs = document.querySelectorAll('.group-info[data-type="Discs"] button.color-sample[data-material="Micarta"]');
+                  numDiscs = discs.length;
+                }
 
                 // Ensure at least one of each
                 if (numLeatherSpacers === 0 || numDiscs === 0 || pommels.length === 0 || bolsters.length === 0) {
@@ -3166,7 +3470,6 @@
                 // Randomly select Discs (at least 1)
                 const numSelectedDiscs = Math.max(1, Math.floor(Math.random() * numDiscs) + 1);
                 const selectedDiscs = Array.from(discs).sort(() => 0.5 - Math.random()).slice(0, numSelectedDiscs);
-
 
                 updateLeatherSpacersStatus(selectedLeatherSpacers);
                 updateDiscsStatus(selectedDiscs);
@@ -3198,16 +3501,14 @@
               function updateDiscsStatus(selectedDiscs) {
                 // Loop through all selected leather spacers
                 selectedDiscs.forEach(disc => {
-                  // If it's not already active, click on it
                   if (!disc.classList.contains('color-sample-active')) {
                     disc.click();
                   }
                 });
 
                 // Loop through all other leather spacers that are NOT in selectedLeatherSpacers
-                document.querySelectorAll('.group-info[data-type="Discs"] button.color-sample').forEach(disc => {
-                  if (!selectedDiscs.includes(disc)) {
-                    // If they have the active class, remove it
+                discs.forEach(disc => {
+                  if (!selectedDiscs.includes(disc) && disc.classList.contains('color-sample-active')) {
                     disc.click();
                   }
                 });
@@ -3215,7 +3516,6 @@
 
               // Example usage
               generateKnifeHandle();
-
             }
           });
 
@@ -3224,24 +3524,50 @@
         </script>
       </div>
       <div class="customizer-footer">
-        <div class="cf-subtotal">Subtotal<span class="subtotal-price">From 200</span></div>
-        <div class="cf-next">Next step</div>
+        <div class="cf-subtotal">Subtotal (Inc. VAT)<span class="subtotal-price">From 200</span></div>
+        <div class="cf-next"><span>Next step</span><span style="display:none;">Siguiente paso</span></div>
         <div class="cf-add-to-cart" style="display:none;">Add to cart</div>
       </div>
     </div>
     <div class="bespoke-addons-images"></div>
   </div>
   <div class="bespoke-choice">
-    <div class="bespoke-time">
-      <span>Current lead time: <span>2-4 weeks</span></span>
-      <span class="close">Close</span>
+    <div class="bespoke-initial">
+      <div class="bespoke-initial_one">
+        <span class="the-model"><span>Select model</span><span style="display:none;">Seleccionar modelo</span></span>
+        <span class="close"><span>Close</span><span style="display:none;">Cerrar</span></span>
+      </div>
+      <div class="bespoke-initial_two">
+        <span class="all-models">
+          <svg xmlns="http://www.w3.org/2000/svg" width="5.378" height="9.556" viewBox="0 0 5.378 9.556"><g id="Group_3667" data-name="Group 3667" transform="translate(12.903 9.131) rotate(180)"><g id="Arrow" transform="translate(0 0)"><path id="Path_3097" data-name="Path 3097" d="M1130.293,3725.366l4.354,4.354-4.354,4.354" transform="translate(-1122.344 -3725.366)" fill="none" stroke="#381409" stroke-linejoin="round" stroke-width="1.2"/></g></g></svg>
+          <span>All models</span><span style="display:none;">Todos los modelos</span>
+        </span>
+        <div class="bespoke-time">
+          <span>Current lead time: <span>1-2 weeks</span></span>
+          <span class="es">Plazo de entrega actual: <span>1-2 semanas</span></span>
+        </div>
+      </div>
     </div>
+    <div class="bespoke-knife-description"></div>
+<!--    <div class="bespoke-time">-->
+<!--      <span>Current lead time: <span>2-4 weeks</span></span>-->
+<!--      <span class="es">Plazo de entrega actual: <span>2-4 semanas</span></span>-->
+<!--      <span class="close"><span>Close</span><span style="display:none;">Cerrar</span></span>-->
+<!--    </div>-->
     <div class="bespoke-list swiper">
       {% render 'bespoke-collection' %}
     </div>
-    <div class="bespoke-choice-footer">
-      <div class="bcf-subtotal">Subtotal<span>From <span></span></span></div>
-      <div class="bcf-cat">Start customising</div>
+    <div class="bespoke-choice-footer show inactive">
+      <div class="bcf-subtotal">
+        <p>
+          <span>Subtotal (Inc. VAT)</span>
+          <span class="es" style="display:none">Subtotal (IVA incluido)</span>
+        </p>
+        <span>From <span></span></span></div>
+      <div class="bcf-cat">
+        <span>Start customising</span>
+        <span style="display:none;">Empezar a personalizar</span>
+      </div>
     </div>
   </div>
   <button class="bespoke-start" style="display:none;">Start customising</button>

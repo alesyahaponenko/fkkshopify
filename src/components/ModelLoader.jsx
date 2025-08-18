@@ -50,10 +50,10 @@ function Model({ path, nodeMaterials = {}, modelId }) {
     model.traverse((node) => {
       if (node && node.geometry) {
         const clonedGeometry = node.geometry.clone();
-        const mergedGeometry = BufferGeometryUtils.mergeVertices(clonedGeometry);
-        mergedGeometry.computeVertexNormals();
+        // const mergedGeometry = BufferGeometryUtils.mergeVertices(clonedGeometry);
+        // mergedGeometry.computeVertexNormals();
         node.geometry.dispose();
-        node.geometry = mergedGeometry;
+        node.geometry = clonedGeometry;
       }
     });
     
@@ -63,12 +63,18 @@ function Model({ path, nodeMaterials = {}, modelId }) {
   useEffect(() => {
     if (!model) return;
 
-    model.traverse((node) => {
+    const timeout = setTimeout(() => {
+      model.traverse((node) => {
       if (node && node.material) {
         node.material.flatShading = false;
         node.material.needsUpdate = true;
       }
-    });
+      });
+    }, 100);
+
+    return () => {
+      clearTimeout(timeout);
+    }
   }, [model]);
 
   useEffect(() => {
