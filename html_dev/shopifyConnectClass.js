@@ -7,6 +7,7 @@ window.initShopifyConnect = () => {
     constructor() {
       this.onHandleModelChangedCb = null;
       this.onBladeModelChangedCb = null;
+      this.onBladeGuardModelChangedCb = null;
       this.onGlobalOptionsChangedCb = null;
       this.onCameraPositionChangedCb = null;
       this.currentCameraPosition = null;
@@ -15,6 +16,8 @@ window.initShopifyConnect = () => {
 
       this.triggerHandleModelChange = this.triggerHandleModelChange.bind(this);
       this.triggerBladeModelChange = this.triggerBladeModelChange.bind(this);
+      this.triggerBladeGuardModelChange =
+        this.triggerBladeGuardModelChange.bind(this);
       this.triggerGlobalOptionsChange =
         this.triggerGlobalOptionsChange.bind(this);
       this.triggerCameraPositionChange =
@@ -32,6 +35,12 @@ window.initShopifyConnect = () => {
     onBladeModelChanged(callback) {
       if (typeof callback === "function") {
         this.onBladeModelChangedCb = callback;
+      }
+    }
+
+    onBladeGuardModelChanged(callback) {
+      if (typeof callback === "function") {
+        this.onBladeGuardModelChangedCb = callback;
       }
     }
 
@@ -56,6 +65,12 @@ window.initShopifyConnect = () => {
     triggerBladeModelChange(bladeModel) {
       if (typeof this.onBladeModelChangedCb === "function") {
         this.onBladeModelChangedCb(bladeModel);
+      }
+    }
+
+    triggerBladeGuardModelChange(bladeGuardModel) {
+      if (typeof this.onBladeGuardModelChangedCb === "function") {
+        this.onBladeGuardModelChangedCb(bladeGuardModel);
       }
     }
 

@@ -302,11 +302,12 @@ function CameraSetup({ globalOptions, cameraPosition, cameraSettings, forceReini
 }
 
 function App() {
-  const { handleModel, bladeModel, globalOptions, cameraPosition, cameraSettings, forceReinit } = useShopifyConnect();
+  const { handleModel, bladeModel, bladeGuardModel, globalOptions, cameraPosition, cameraSettings, forceReinit } = useShopifyConnect();
 
   const modelLoaderProps = {
     handleModel,
     bladeModel,
+    bladeGuardModel,
     cameraPosition,
     timestamp: Date.now(),
   };

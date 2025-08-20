@@ -1005,6 +1005,211 @@
       color: #381409;
     }
 
+    /* Blade Guards in same style as Handle Design */
+    #optionalAddons .section-content {
+      flex-direction: column;
+    }
+
+    #optionalAddons .group-info {
+      border-top: 1px solid #381409;
+      padding: .73vw 0 2.08vw;
+      margin: 0;
+      display: flex;
+    }
+
+    #optionalAddons .group-info h3 {
+      font-family: "akzidenz-grotesk", sans-serif;
+      font-size: .78vw;
+      line-height: .82vw;
+      color: #381409;
+      width: 7.7vw;
+      min-width: 7.7vw;
+    }
+
+    #optionalAddons .group-info.blade-guards h3 {
+      cursor: pointer;
+      position: relative;
+    }
+
+
+
+    #optionalAddons .group-info.blade-guards.disabled h3::after {
+      opacity: 0.3;
+    }
+
+    #optionalAddons .group-info.blade-guards.disabled .colors-container {
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    #optionalAddons .group-info button.color-sample {
+      width: .52vw;
+      height: 1.04vw;
+      border-radius: 2px;
+      cursor: pointer;
+      position: relative;
+      border: none;
+      margin-right: .31vw;
+    }
+
+    #optionalAddons .group-info button.color-sample-active::after {
+      content: '';
+      display: block;
+      width: .84vw;
+      height: 1.35vw;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-sizing: border-box;
+      border: 1px solid #381409;
+      border-radius: 3px;
+    }
+
+
+
+    /* Blade Guard Styles */
+    .blade-guard-section {
+      margin: 1.5vw 0;
+      padding: 1vw 0;
+      border-top: 1px solid #381409;
+    }
+
+    .blade-guard-section h3 {
+      font-family: "akzidenz-grotesk", sans-serif;
+      font-size: .78vw;
+      line-height: .82vw;
+      color: #381409;
+      margin-bottom: .83vw;
+    }
+
+    .blade-guard-selector {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5vw;
+      margin-bottom: 1vw;
+    }
+
+    .blade-guard-option {
+      position: relative;
+    }
+
+    .blade-guard-option input[type="radio"] {
+      display: none;
+    }
+
+    .blade-guard-option label {
+      display: block;
+      padding: .5vw 1vw;
+      background: transparent;
+      border: 1px solid #381409;
+      border-radius: .3vw;
+      cursor: pointer;
+      font-family: "akzidenz-grotesk", sans-serif;
+      font-size: .73vw;
+      line-height: .83vw;
+      color: #381409;
+      transition: all 0.3s ease;
+    }
+
+    .blade-guard-option label:hover {
+      background: #f0f0f0;
+    }
+
+    .blade-guard-option input:checked + label {
+      background: #381409;
+      color: #F4F4F4;
+    }
+
+    .blade-guard-colors {
+      margin-top: 1vw;
+    }
+
+    .blade-guard-colors h4 {
+      font-family: "akzidenz-grotesk", sans-serif;
+      font-size: .73vw;
+      line-height: .83vw;
+      color: #381409;
+      margin-bottom: .5vw;
+    }
+
+    .blade-guard-colors .color-options {
+      display: flex;
+      gap: .5vw;
+      flex-wrap: wrap;
+    }
+
+    .blade-guard-colors input[type="radio"] {
+      display: none;
+    }
+
+    .blade-guard-colors .color-sample {
+      display: block;
+      width: 1.5vw;
+      height: 1.5vw;
+      border-radius: .2vw;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .blade-guard-colors .color-sample:hover {
+      border-color: #999;
+      transform: scale(1.1);
+    }
+
+    .blade-guard-colors input:checked + .color-sample {
+      border-color: #381409;
+      transform: scale(1.2);
+      box-shadow: 0 0 0 2px rgba(56, 20, 9, 0.3);
+    }
+
+    /* Mobile styles for blade guards */
+    @media only screen and (max-width: 1024px) {
+      .blade-guard-section {
+        margin: 20px 0;
+        padding: 15px 0;
+      }
+
+      .blade-guard-section h3 {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 15px;
+      }
+
+      .blade-guard-selector {
+        gap: 8px;
+        margin-bottom: 15px;
+      }
+
+      .blade-guard-option label {
+        padding: 8px 15px;
+        font-size: 13px;
+        line-height: 15px;
+        border-radius: 5px;
+      }
+
+      .blade-guard-colors {
+        margin-top: 15px;
+      }
+
+      .blade-guard-colors h4 {
+        font-size: 13px;
+        line-height: 15px;
+        margin-bottom: 10px;
+      }
+
+      .blade-guard-colors .color-options {
+        gap: 8px;
+      }
+
+      .blade-guard-colors .color-sample {
+        width: 25px;
+        height: 25px;
+        border-radius: 3px;
+      }
+    }
+
 
     .reset-selections-btn {
       display: none;
@@ -1243,7 +1448,7 @@
             </g>
           </g>
         </svg>
-        <div class="ch-step"><span>1</span>/7</div>
+        <div class="ch-step"><span>1</span>/8</div>
         <div class="ch-name"></div>
       </div>
       <div class="ch-right">
@@ -1277,7 +1482,7 @@
               </g>
             </g>
           </svg>
-          <div class="ch-step"><span>1</span>/7</div>
+          <div class="ch-step"><span>1</span>/8</div>
           <div class="ch-name"></div>
         </div>
         <div class="ch-right">
@@ -1301,7 +1506,7 @@
           <h2 class="section-title">Laser Engraving</h2>
         </div>
         <div id="optionalAddons" class="bespoke-step">
-          <h2 class="section-title">Optional add-on’s</h2>
+          <h2 class="section-title">Optional add-on's</h2>
           <div class="section-content"></div>
         </div>
         <div id="orderNotes" class="bespoke-step">
@@ -1314,6 +1519,7 @@
         <script>
           let TARGET_COLLECTION_ID = "cm3n7xcpo0000ljvbff65bjuu";
 
+          console.log('bespoke')
           // Data storage
           let appData = {  collections: null,
             globalOptions: null,
@@ -1321,12 +1527,79 @@
             currentModels: {
               handle: null,
               blade: null,
+              bladeGuard: null,
             },
             materialSettings: {
               activeSettings: {
               },
+              bladeGuardActiveSettings: {
+              },
             },
           };
+
+          // Function to get models by type from collection
+          function getModelsByType(collection, modelType) {
+            if (!collection || !collection.items || !Array.isArray(collection.items)) {
+              return [];
+            }
+            
+            const filteredModels = collection.items.filter(item => item.modelType === modelType);
+            return filteredModels;
+          }
+
+          // Function for blade guard materials that returns proper material objects
+          function createSimpleBladeGuardNodeMaterials(model, selectedColor) {
+            const nodeMaterials = {};
+            if (!model || !selectedColor) return nodeMaterials;
+            
+            console.log('Creating blade guard materials for:', model.fileName, 'color:', selectedColor);
+            
+            // Find the material properties for the selected color
+            if (model.refGroups) {
+              model.refGroups.forEach((group) => {
+                if (group.groupedNodes && group.groupedNodes.length > 0) {
+                  const groupedNode = group.groupedNodes[0];
+                  if (groupedNode.settingsData && groupedNode.settingsData.difmaps) {
+                    
+                    // Find the material that contains our selected color
+                    let materialSettings = null;
+                    groupedNode.settingsData.difmaps.forEach((difmap) => {
+                      if (difmap.colors && difmap.colors.length > 0) {
+                        difmap.colors.forEach((color) => {
+                          const colorValue = typeof color === 'string' ? color : (color?.value || color?.color);
+                          if (colorValue === selectedColor) {
+                            materialSettings = {
+                              color: colorValue,
+                              metalness: difmap.metalness || 0.5,
+                              roughness: difmap.roughness || 0.5,
+                              texture: difmap.textures?.[0]?.url || null
+                            };
+                          }
+                        });
+                      }
+                    });
+                    
+                    // If we found material settings, apply to all nodes in this group
+                    if (materialSettings && group.nodes && group.nodes.length > 0) {
+                      group.nodes.forEach((node) => {
+                        nodeMaterials[node] = materialSettings;
+                      });
+                      console.log('Applied material to group:', group.name, materialSettings);
+                    }
+                  }
+                }
+              });
+            }
+            
+            console.log('Final nodeMaterials:', nodeMaterials);
+            return nodeMaterials;
+          }
+
+          // Export functions and data to window for access from custom.js
+          window.appData = appData;
+          window.getModelsByType = getModelsByType;
+          window.createBladeGuardNodeMaterials = createSimpleBladeGuardNodeMaterials;
+          window.createBladeGuardSelector = createBladeGuardSelector;
 
           let activeKnife;
           let chosenSteel;
@@ -1660,9 +1933,18 @@
               if(material.name === 'Discs') {
                 document.querySelector('div[data-type="Discs"] .group-header > span').innerText = '';
               }else{
-                document.querySelector('div[data-type="'+material.name+'"] .group-header > span:nth-child(2)').style.display = 'block';
-                document.querySelector('div[data-type="'+material.name+'"] .group-header span.on-hover').remove();
-                document.querySelector('.group-info[data-type="'+material.name+'"] .section-price-hover').remove();
+                const secondSpan = document.querySelector('div[data-type="'+material.name+'"] .group-header > span:nth-child(2)');
+                if (secondSpan) {
+                  secondSpan.style.display = 'block';
+                }
+                const hoverSpan = document.querySelector('div[data-type="'+material.name+'"] .group-header span.on-hover');
+                if (hoverSpan) {
+                  hoverSpan.remove();
+                }
+                const priceHover = document.querySelector('.group-info[data-type="'+material.name+'"] .section-price-hover');
+                if (priceHover) {
+                  priceHover.remove();
+                }
               }
             });
 
@@ -1750,6 +2032,235 @@
             });
 
             return container;
+          }
+
+
+
+
+
+          function createBladeGuardNodeMaterials(model) {
+            const nodeMaterials = {};
+            const groups = getModelGroups(model);
+
+            groups.forEach((group) => {
+              // Check if this is a blade guard group and get selected color
+              const selectedBladeGuardColor = document.querySelector('input[name="blade-guard-color"]:checked');
+              
+              if (selectedBladeGuardColor) {
+                const selectedColorValue = selectedBladeGuardColor.value;
+                let materialSettings = null;
+
+                // Find the material with the selected color
+              const materials = group.groupedNodes[0]?.settingsData?.difmaps || [];
+                
+                for (const material of materials) {
+                  const colorMatch = material.colors.find(colorObj => colorObj.color === selectedColorValue);
+                  if (colorMatch) {
+                    materialSettings = {
+                      color: colorMatch.color,
+                      metalness: material.metalness,
+                      roughness: material.roughness,
+                      texture: material.textures?.[0]?.url || null,
+                    };
+                    break;
+                  }
+                }
+
+                // Fallback to first available color if no match
+                if (!materialSettings && materials.length > 0) {
+                  const firstMaterial = materials[0];
+                  materialSettings = {
+                    color: firstMaterial.colors[0]?.color || "#808080",
+                    metalness: firstMaterial.metalness,
+                    roughness: firstMaterial.roughness,
+                    texture: firstMaterial.textures?.[0]?.url || null,
+                  };
+                }
+
+                // Apply material to all nodes in the group
+                if (materialSettings) {
+                  group.nodes.forEach((nodeName) => {
+                    nodeMaterials[nodeName] = materialSettings;
+                  });
+                }
+              }
+            });
+
+            return nodeMaterials;
+          }
+
+          function createBladeGuardSelector(models) {
+            const container = document.createElement("div");
+            container.classList.add("blade-guard-section");
+            
+            const title = document.createElement("h3");
+            title.textContent = document.documentElement.lang === 'es' ? "Protectores de hoja:" : "Blade Guards:";
+            container.appendChild(title);
+
+            const selectorContainer = document.createElement("div");
+            selectorContainer.classList.add("blade-guard-selector");
+
+            // "No Blade Guard" option
+            const noGuardDiv = document.createElement("div");
+            noGuardDiv.classList.add("blade-guard-option");
+            
+            const noGuardRadio = document.createElement("input");
+            noGuardRadio.type = "radio";
+            noGuardRadio.name = "blade-guard-model";
+            noGuardRadio.id = "no-blade-guard";
+            noGuardRadio.value = "";
+            noGuardRadio.checked = true;
+
+            const noGuardLabel = document.createElement("label");
+            noGuardLabel.setAttribute("for", "no-blade-guard");
+            noGuardLabel.textContent = document.documentElement.lang === 'es' ? "Sin protector" : "No Guard";
+
+            noGuardDiv.appendChild(noGuardRadio);
+            noGuardDiv.appendChild(noGuardLabel);
+            selectorContainer.appendChild(noGuardDiv);
+
+            // Blade Guard model options
+            models.forEach((model) => {
+              const modelDiv = document.createElement("div");
+              modelDiv.classList.add("blade-guard-option");
+              
+              const modelRadio = document.createElement("input");
+              modelRadio.type = "radio";
+              modelRadio.name = "blade-guard-model";
+              modelRadio.id = `blade-guard-${model.fileName}`;
+              modelRadio.value = model.fileName;
+              modelRadio.setAttribute("data-model", JSON.stringify(model));
+
+              const modelLabel = document.createElement("label");
+              modelLabel.setAttribute("for", `blade-guard-${model.fileName}`);
+              modelLabel.textContent = model.textFileName;
+
+              modelDiv.appendChild(modelRadio);
+              modelDiv.appendChild(modelLabel);
+              selectorContainer.appendChild(modelDiv);
+            });
+
+            container.appendChild(selectorContainer);
+
+            // Color selection container (initially hidden)
+            const colorContainer = document.createElement("div");
+            colorContainer.classList.add("blade-guard-colors");
+            colorContainer.id = "blade-guard-colors";
+            colorContainer.style.display = "none";
+            container.appendChild(colorContainer);
+
+            // Event listeners for model selection
+            const modelRadios = selectorContainer.querySelectorAll('input[name="blade-guard-model"]');
+            modelRadios.forEach((radio) => {
+              radio.addEventListener("change", () => {
+                if (radio.checked) {
+                  if (radio.value === "") {
+                    // No blade guard selected
+                    colorContainer.style.display = "none";
+                    appData.currentModels.bladeGuard = null;
+                    document.shopifyConnect.triggerBladeGuardModelChange(null);
+                  } else {
+                    // Blade guard selected - show colors
+                    const model = JSON.parse(radio.getAttribute("data-model"));
+                    showBladeGuardColors(model, colorContainer);
+                    colorContainer.style.display = "block";
+                  }
+                }
+              });
+            });
+
+            return container;
+          }
+
+          function showBladeGuardColors(model, colorContainer) {
+            colorContainer.innerHTML = "";
+            
+            const colorTitle = document.createElement("h4");
+            colorTitle.textContent = document.documentElement.lang === 'es' ? "Selecciona color:" : "Choose color:";
+            colorContainer.appendChild(colorTitle);
+
+            const colorsDiv = document.createElement("div");
+            colorsDiv.classList.add("color-options");
+
+            // Get all available colors from the model
+            const groups = getModelGroups(model);
+            groups.forEach((group) => {
+              const materials = group.groupedNodes[0]?.settingsData?.difmaps || [];
+              
+              materials.forEach((material) => {
+                material.colors.forEach((colorObj, colorIndex) => {
+                  const colorRadio = document.createElement("input");
+                  colorRadio.type = "radio";
+                  colorRadio.name = "blade-guard-color";
+                  colorRadio.id = `blade-guard-color-${material.name}-${colorIndex}`;
+                  colorRadio.value = colorObj.color;
+                  colorRadio.checked = colorIndex === 0; // First color selected by default
+
+                  const colorLabel = document.createElement("label");
+                  colorLabel.setAttribute("for", `blade-guard-color-${material.name}-${colorIndex}`);
+                  colorLabel.classList.add("color-sample");
+                  colorLabel.style.backgroundColor = colorObj.color;
+                  colorLabel.title = `${material.name} - ${colorObj.name || colorObj.color}`;
+
+                  colorRadio.addEventListener("change", () => {
+                    if (colorRadio.checked) {
+                      updateBladeGuardModel(model);
+                    }
+                  });
+
+                  colorsDiv.appendChild(colorRadio);
+                  colorsDiv.appendChild(colorLabel);
+                });
+              });
+            });
+
+            colorContainer.appendChild(colorsDiv);
+            
+            // Automatically update model with first color
+            setTimeout(() => updateBladeGuardModel(model), 100);
+          }
+
+          function updateBladeGuardModel(model) {
+                      const modelWithMaterials = {
+              ...model,
+              nodeMaterials: createBladeGuardNodeMaterials(model),
+                      };
+
+                      appData.currentModels.bladeGuard = modelWithMaterials;
+                      document.shopifyConnect.triggerBladeGuardModelChange(modelWithMaterials);
+
+                  setTimeout(function(){
+                    if(chosenProductVariants) {
+                      getNewPrice(getBespokeVariant());
+                    }
+                  }, 100);
+                }
+
+
+
+
+
+
+
+          function selectModels(handleModel, bladeModel) {
+            let handleWithMaterials, bladeWithMaterials;
+
+            if (handleModel) {
+              handleWithMaterials = {
+                ...handleModel,
+                nodeMaterials: createNodeMaterials(handleModel),
+              };
+              appData.currentModels.handle = handleWithMaterials;
+              document.shopifyConnect.triggerHandleModelChange(handleWithMaterials);
+            }
+            if (bladeModel) {
+              bladeWithMaterials = {
+                ...bladeModel,
+                nodeMaterials: createNodeMaterials(bladeModel),
+              };
+              appData.currentModels.blade = bladeWithMaterials;
+              document.shopifyConnect.triggerBladeModelChange(bladeWithMaterials);
+            }
           }
 
           function updateModelWithMaterials(model) {
@@ -2130,10 +2641,13 @@
             return steelModelSelector;
           }
 
+
+
           function displayModelInfo(handleModel, bladeModel) {
             const container = document.createElement("div");
             const step1Content = document.getElementById('bladeSteel');
             const step2Content = document.getElementById('bladeGeometry');
+            const step3Content = document.getElementById('bladeFinish');
             const step4Content = document.getElementById('handleDesign');
             container.id = "models-display";
 
@@ -2151,6 +2665,7 @@
 
             const steelContainer = document.createElement('div');
             const geometryContainer = document.createElement('div');
+            const guardContainer = document.createElement('div');
             const handleContainer = document.createElement('div');
 
             if (appData.currentCollection) {
@@ -2187,6 +2702,8 @@
                 geometryContainer.appendChild(bladeSelector);
                 step2Content.appendChild(geometryContainer);
               }
+
+
 
               let generateTitle = 'Generate Design';
               let designTitle = 'Design Handle';
@@ -2404,13 +2921,19 @@
                 allSteps[activeStepIndex + 1].classList.add('active');
                 if(allSteps[activeStepIndex + 1].getAttribute('id') === 'optionalAddons') {
                   document.querySelector('.bespoke-customizer').classList.add('optionalAddons');
+                  // Activate blade guards when reaching step 6
+                  if (typeof window.activateBladeGuardsOnStep6 === 'function') {
+                    setTimeout(() => {
+                      window.activateBladeGuardsOnStep6();
+                    }, 100);
+                  }
                 }else{
                   document.querySelector('.bespoke-customizer').classList.remove('optionalAddons');
                 }
 
                 document.querySelector('.customizer-header .ch-back .ch-step span').innerText = activeStepIndex + 2;
                 document.querySelector('.customizer-header-mobile .ch-back .ch-step span').innerText = activeStepIndex + 2;
-                if (activeStepIndex + 2 === 7) {
+                if (activeStepIndex + 2 === 8) {
                   nextButton.style.display = 'none';
                   addToCart.style.display = 'flex';
                 }

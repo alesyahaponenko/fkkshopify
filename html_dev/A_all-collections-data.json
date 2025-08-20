@@ -1405,6 +1405,55 @@
               ]
             }
           ]
+        },
+        {
+          "fileName": "AC_cm3n7xcpo0000ljvbff65bjuu_bladeGuards_test----------Chef-Saya-03.glb",
+          "textFileName": "tt",
+          "fileUrl": "https://cdn.shopify.com/s/files/1/0708/2462/4376/t/3/assets/AC_cm3n7xcpo0000ljvbff65bjuu_bladeGuards_test----------Chef-Saya-03.glb?v=1755636772",
+          "modelType": "bladeGuards",
+          "nodes": [],
+          "refGroups": [
+            {
+              "id": "group_1755636810851",
+              "name": "ytytyytytytytyty",
+              "nodes": [
+                "Saya-Chef",
+                "Saya-Chef001",
+                "Saya-Chef002",
+                "Saya-Chef003",
+                "Saya-Chef004",
+                "Saya-Chef005"
+              ],
+              "groupedNodes": [
+                {
+                  "id": "cmeg8mi1d00002f110w8g7dfo",
+                  "name": "guard-----test",
+                  "modelType": "bladeGuards",
+                  "settingsData": {
+                    "difmaps": [
+                      {
+                        "id": "1755468538785",
+                        "name": "guard texture gr",
+                        "metalness": 0.52,
+                        "roughness": 0.32,
+                        "colors": [
+                          { "name": "ee", "color": "#367581" },
+                          { "name": "f", "color": "#17cc14" },
+                          { "name": "rr", "color": "#bd3d3d" }
+                        ],
+                        "textures": [
+                          {
+                            "url": "https://cdn.shopify.com/s/files/1/0708/2462/4376/t/3/assets/A_textures_null_Blue.jpg?v=1743243910"
+                          }
+                        ],
+                        "textureUpdated": "2025-08-17T22:18:23.088Z"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -9695,68 +9744,6 @@
                           }
                         ],
                         "textureUpdated": "2025-03-18T23:08:01.868Z"
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "cmegarbkx00012f11mee4nnlo",
-      "name": "coltest",
-      "items": [
-        {
-          "fileName": "AC_cmegarbkx00012f11mee4nnlo_bladeGuards_test----------Chef-Saya-03.glb",
-          "textFileName": "fff",
-          "fileUrl": "https://cdn.shopify.com/s/files/1/0708/2462/4376/t/3/assets/AC_cmegarbkx00012f11mee4nnlo_bladeGuards_test----------Chef-Saya-03.glb?v=1755472119",
-          "modelType": "bladeGuards",
-          "nodes": [
-            "Saya-Chef",
-            "Saya-Chef001",
-            "Saya-Chef002",
-            "Saya-Chef003",
-            "Saya-Chef004",
-            "Saya-Chef005"
-          ],
-          "refGroups": [
-            {
-              "id": "group_1755472153741",
-              "name": "teeeeeeest",
-              "nodes": [
-                "Saya-Chef",
-                "Saya-Chef001",
-                "Saya-Chef002",
-                "Saya-Chef003",
-                "Saya-Chef005",
-                "Saya-Chef004"
-              ],
-              "groupedNodes": [
-                {
-                  "id": "cmeg8mi1d00002f110w8g7dfo",
-                  "name": "guard-----test",
-                  "modelType": "bladeGuards",
-                  "settingsData": {
-                    "difmaps": [
-                      {
-                        "id": "1755468538785",
-                        "name": "guard texture gr",
-                        "metalness": 0.52,
-                        "roughness": 0.32,
-                        "colors": [
-                          { "name": "ee", "color": "#367581" },
-                          { "name": "f", "color": "#17cc14" },
-                          { "name": "rr", "color": "#bd3d3d" }
-                        ],
-                        "textures": [
-                          {
-                            "url": "https://cdn.shopify.com/s/files/1/0708/2462/4376/t/3/assets/A_textures_null_Blue.jpg?v=1743243910"
-                          }
-                        ],
-                        "textureUpdated": "2025-08-17T22:18:23.088Z"
                       }
                     ]
                   }

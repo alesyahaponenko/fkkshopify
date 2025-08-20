@@ -131,12 +131,30 @@ function Model({ path, nodeMaterials = {}, modelId }) {
   useEffect(() => {
     if (!model) return;
 
+    // Log nodeMaterials for debugging blade guard colors
+    if (modelId && modelId.includes('bladeGuard')) {
+      console.log('🎨 Applying materials to blade guard model:', modelId, {
+        nodeMaterials: nodeMaterials,
+        nodeCount: Object.keys(nodeMaterials).length
+      });
+    }
+
     model.traverse((node) => {
       if (node.isMesh) {
         const material = nodeMaterials[node.name];
         if (!material) {
           node.material = materialsCache.current.get(node.name);
           return;
+        }
+
+        // Log specific material application for blade guards
+        if (modelId && modelId.includes('bladeGuard')) {
+          console.log('🔧 Applying material to node:', node.name, {
+            color: material.color,
+            metalness: material.metalness,
+            roughness: material.roughness,
+            texture: material.texture
+          });
         }
 
         const texture = material.texture ? texturesCache.current.get(material.texture) : null;
@@ -187,9 +205,10 @@ function Model({ path, nodeMaterials = {}, modelId }) {
   return <primitive object={modelRef.current} />;
 }
 
-function ModelLoader({ handleModel, bladeModel, timestamp }) {
+function ModelLoader({ handleModel, bladeModel, bladeGuardModel, timestamp }) {
   const [handleModelId, setHandleModelId] = useState(null);
   const [bladeModelId, setBladeModelId] = useState(null);
+  const [bladeGuardModelId, setBladeGuardModelId] = useState(null);
   
   useEffect(() => {
     if (handleModel) {
@@ -219,7 +238,30 @@ function ModelLoader({ handleModel, bladeModel, timestamp }) {
     } else {
       setBladeModelId(null);
     }
-  }, [handleModel, bladeModel, handleModelId, bladeModelId]);
+    
+    if (bladeGuardModel) {
+      console.log('🔍 React received bladeGuardModel:', {
+        fileName: bladeGuardModel.fileName,
+        fileUrl: bladeGuardModel.fileUrl,
+        textFileName: bladeGuardModel.textFileName,
+        selectedColor: bladeGuardModel.selectedColor,
+        nodeMaterials: bladeGuardModel.nodeMaterials,
+        modelType: bladeGuardModel.modelType
+      });
+      
+      if (bladeGuardModel.fileUrl && typeof bladeGuardModel.fileUrl === 'string') {
+        const newId = `bladeGuard-${bladeGuardModel.fileUrl}-${bladeGuardModel.textFileName || ''}`;
+        if (newId !== bladeGuardModelId) {
+          setBladeGuardModelId(newId);
+        }
+      } else {
+        console.warn('Invalid bladeGuardModel.fileUrl:', bladeGuardModel.fileUrl);
+        setBladeGuardModelId(null);
+      }
+    } else {
+      setBladeGuardModelId(null);
+    }
+  }, [handleModel, bladeModel, bladeGuardModel, handleModelId, bladeModelId, bladeGuardModelId]);
 
   // useEffect(() => {
   //   console.log("ModelLoader received new props:", {
@@ -246,6 +288,14 @@ function ModelLoader({ handleModel, bladeModel, timestamp }) {
           modelId={bladeModelId}
           path={bladeModel.fileUrl}
           nodeMaterials={bladeModel.nodeMaterials || {}}
+        />
+      )}
+      {bladeGuardModel && bladeGuardModel.fileUrl && bladeGuardModelId && (
+        <Model
+          key={bladeGuardModelId}
+          modelId={bladeGuardModelId}
+          path={bladeGuardModel.fileUrl}
+          nodeMaterials={bladeGuardModel.nodeMaterials || {}}
         />
       )}
     </>
